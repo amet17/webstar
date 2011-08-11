@@ -15,9 +15,9 @@ class JConfig {
 	var $gzip = '0';
 	var $error_reporting = '-1';
 	var $xmlrpc_server = '0';
-	var $log_path = 'x:\\home\\sborka.ru\\www\\logs';
-	var $tmp_path = 'x:\\home\\sborka.ru\\www\\tmp';
-	var $live_site = 'http://sborka.ru';
+	var $log_path = 'x:\\home\\webstar\\www\\logs';
+	var $tmp_path = 'x:\\home\\webstar\\www\\tmp';
+	var $live_site = 'http://webstar';
 	var $force_ssl = '0';
 	var $offset = '0';
 	var $caching = '0';
@@ -32,8 +32,8 @@ class JConfig {
 	var $ftp_root = '';
 	var $dbtype = 'mysql';
 	var $host = 'localhost';
-	var $user = 'sborkaru';
-	var $db = 'sborkaru';
+	var $user = 'webstar';
+	var $db = 'webstar';
 	var $dbprefix = 'jos_';
 	var $mailer = 'mail';
 	var $mailfrom = 'admin@gmail.com';
@@ -49,7 +49,7 @@ class JConfig {
 	var $MetaTitle = '1';
 	var $lifetime = '1000';
 	var $session_handler = 'database';
-	var $password = 'sborkaru';
+	var $password = 'webstar';
 	var $sitename = 'Сайт';
 	var $MetaDesc = '';
 	var $MetaKeys = '';
