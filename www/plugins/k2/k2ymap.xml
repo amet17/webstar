@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="k2">
+   <name>K2 Plugin - K2ymap</name>
+  <author>Kazmin Alexander</author>
+  <creationDate>February 1st, 2011</creationDate>
+  <copyright>Copyright (c) 2011 Kazmin Alexander.</copyright>
+  <authorEmail>alkonkaz@hotmail.com</authorEmail>
+  <authorUrl>www.yandex.ru</authorUrl>
+  <version>1.0</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>K2ymap DESCRIPTION</description>
+	<files>
+		<filename plugin="k2ymap">k2ymap.php</filename>   		
+	</files>
+	<params>
+    <param name="apikey" type="text" size="50" label="Api key" description="Api key description" />
+		<param name="@spacer" type="spacer" default="" />
+    <param name="ymapdivid" type="text" default="YMap" label="Yandex Maps DIV id" description="Yandex Maps DIV id DESCRIPTION" />	
+		<param name="ymapdivstyle" type="text" size="80" default="width:600px; height:500px;" label="Map DIV style" description="Map DIV style DESCRIPTION" />
+		<param name="extraFieldName" type="text" size="80" default="Адрес компании" label="Name of extra field to yandex search" description="Name of extra field to yandex search DESCRIPTION" />
+		<param name="@spacer" type="spacer" default="" />
+   </params>	
+</install>

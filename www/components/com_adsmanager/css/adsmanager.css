@@ -1,0 +1,416 @@
+/*                                */
+/* Stylesheet for com_adsmanager  */
+/*                                */
+/*    (c) 2006 Thomas PAPIN       */
+/*         GPL License            */
+/*                                */
+/*     thomas.papin@free.fr       */
+/*                                */
+
+#adsmanager_fieldset form br {
+	clear: left;
+}
+
+.adsmanager_main_cat,.adsmanager_main_cat a:link,.adsmanager_main_cat a:visited{
+ font-size: 16px;
+ margin: 0px;
+ margin-top: 10px;
+ padding: 0px ;
+ color: #000000;
+}
+
+.adsmanager_sub_cat,.adsmanager_sub_cat a:link,.adsmanager_sub_cat a:visited {
+ font-size: 11px;
+ font-family: arial;
+ margin-top: 2px;
+ padding: 0 ;
+ color: #7333B3;
+ font-weight:normal;
+ text-decoration:none;
+}
+
+.imgcat {
+ border : 0;
+}
+
+.adsmanager_footer {
+ font-size: 10px;
+ color: #555555;
+}
+
+.adsmanager_cat {
+ font-size: 10px;
+ color: #555555;
+}
+
+.adsmanager_pathway {
+ margin-bottom:10px;
+}
+
+table.adsmanager_table{
+ background-color: #F7F7F7;
+ border: 1px solid #cccccc;
+ border-collapse: collapse; 
+ width: 98%;
+}
+
+table.adsmanager_table th {
+ background-color: #EEEEEE;
+ border: 1px solid #cccccc;
+ text-align:center;
+ font-size: 11px;
+}
+
+table.adsmanager_table td {
+ border: 1px solid #cccccc;
+}
+
+.adsmanager_table td img.adimage {
+	float: left;
+	border: none;
+	padding-right: 8px;
+}
+
+.adsmanager_table td h2{
+	font-size: 11px;
+	margin-bottom : 0px;
+	padding-bottom: 5px;
+}
+
+.adsmanager_table td {
+	text-align: left;
+	padding : 5px;
+}
+
+table.adsmanager_table tr td.right {
+ text-align: right;
+}
+
+table.adsmanager_table tr td.center {
+  text-align:center;
+}
+
+
+table.adsmanager_topmenue {
+  background-color: #F7F7F7;
+  color: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+
+table.adsmanager_topmenue td {
+  border: 1px solid #cccccc;
+  color: #000000;
+  padding: 3px;
+  margin: 0px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.adsmanager_search_title {
+ background: url(../images/system/title.png) no-repeat;
+ height: 24px;
+ color: #7333B3;
+ padding-top: 1px; 
+ padding-left: 24px; 
+ margin-bottom: 2px;
+ margin-top: 2px;
+ font-weight: bold;
+ font-size: 14px;
+ }
+ 
+.adsmanager_subtitle {
+ text-align : right;
+ margin-bottom: 2px; 
+}
+
+.adsmanager_search_box {
+	position :relative;
+	width: 96%;
+	left: 2%;
+	border: 1px solid #CCCCCC;
+	color: #000000;
+	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.adsmanager_box_module {
+	width: 95%;
+	color: #000000;
+	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.adsmanager_box {
+    position :relative;
+	width: 75%;
+	left: 10%;
+	border: 1px solid #CCCCCC;
+	color: #000000;
+	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.adsmanager_inner_box {
+	font-size: 12px;
+	color: #000000;
+	padding: 5px; 
+	text-align:right;
+}
+
+.adsmanager_inner_box tr td {
+	padding-right: 5px;
+}
+
+.adsmanager_search_box form {
+	display : inline;
+}
+
+.imgheading {
+    margin-right : 5px;
+}
+
+table.adsmanager {
+	width: 100%;
+	color: #000000;
+	border: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+}
+table.adsmanager_header {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+table.adsmanager_select {
+	/* width: 100%; */
+	color: #000000;
+	background-color: #F0F0F0;
+}
+
+div.adsmanager_ads {
+  border: 1px solid #CCCCCC;
+  color: #000000;
+  padding: 2px;
+  margin: 0px;
+}
+
+div.adsmanager_top_ads {
+	font-size: 10px;
+	color: #000000;
+	border: 1px dotted #CCCCCC;
+	background-color: #CCCCCC;
+	padding: 5px; 
+}
+
+div.adsmanager_ads_kindof {
+	text-align : right;
+}
+
+div.adsmanager_ads_state {
+	text-align : right;
+}
+
+h2.adsmanager_ads_title {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0px; 
+	margin: 0px;
+}
+
+div.adsmanager_ads_main {
+	background-color: #F0F0F0; 
+}
+
+div.adsmanager_ads_body {
+	float: left;
+	width: 67%;
+}
+
+div.adsmanager_ads_desc {
+	border: 1px solid #FFFFFF;
+	padding: 5px; 
+}
+
+div.adsmanager_ads_price {
+	border: 1px solid #FFFFFF;
+	padding: 5px; 
+}
+
+div.adsmanager_ads_contact {
+	border: 1px solid #FFFFFF;
+	padding: 5px; 
+}
+
+div.adsmanager_ads_image {
+	border-left: 1px solid #FFFFFF;
+	float: left;
+	width:30%;
+	padding: 5px; 
+	text-align : center;
+}
+
+div.adsmanager_ads_image a{
+	display : block;
+	margin-top: 10px;	
+}
+
+div.adsmanager_ads_image a img{
+	border: none;
+}
+
+
+.adsmanager_spacer {	
+	clear: both;
+}
+
+div.adsmanager_footer {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto 0 auto;
+}
+
+
+
+fieldset.adsmanager {
+	color: #000000;
+	border: 1px solid #CCCCCC;
+	/* background_color: #555555; */
+	/* padding: 5; */
+}
+
+
+legend.adsmanager {
+	color: #000000;
+	font-weight: bold;
+	border: 1px solid #CCCCCC;
+	/* background_color: #DDDDDD; */
+	padding: 10px;
+}
+
+
+
+.adsmanager {
+	border: 1px solid #CCCCCC;
+	background-color: #F0F0F0;
+	margin: 2px;
+	padding: 2px;
+}
+
+.adsmanager_required {
+	border: 1px solid #CCCCCC;
+	background-color: #FFEEDD;
+	margin: 2px;
+	padding: 2px;
+} 
+
+#adsmanager_fieldset label {
+	/* border: 1px solid #CCCCCC; */
+	width: 15%;
+	float: left;
+	margin: 2px;
+	padding: 2px;
+	text-align: right;
+}
+
+#adsmanager_fieldset label.right {
+	/* border: 1px solid #CCCCCC; */
+	width: 14em;
+	float: left;
+	margin: 5px;
+	padding: 2px;
+	text-align: left;
+}
+
+#adsmanager_writead_header{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#adsmanager_innermenu {
+text-align:center !important;
+margin-left:auto;
+margin-right:auto;
+}
+
+#home {
+	text-align:center !important;	
+}
+
+#home td,#home tr {
+	border: 0;	
+}
+
+#home img {
+	padding-right: 10px;	
+}
+
+.pagelinks {
+	text-align:center!important;	
+	padding:10px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#home table {
+	margin-left:auto; margin-right:auto;
+}
+
+.center {
+	margin-left:auto; margin-right:auto;	
+	text-align:center !important;	
+}
+
+#home div {
+	text-align:center !important;	
+}
+
+.adsmanager_fronttext {
+	text-align:center !important;
+}
+
+.list-footer, .list-footer div{
+	text-align:center !important;
+}
+
+.adsmanager_box_module {
+	text-align:center !important;	
+}
+
+.adsmanager_box_module div {
+	text-align:center !important;	
+}
+
+
+#writead_header1 {
+    display: inline;
+	border: 1px solid #CCCCCC;
+	background-color: #FFEEDD;
+	width: 7em;
+	margin: 5px;
+	padding: 2px;
+}
+#writead_header2 {
+    display: inline;
+	border: 1px solid #CCCCCC;
+	background-color: #EEEEEE;
+	width: 7em;
+	margin: 5px;
+	padding: 2px;
+}
+
+/* v1.1.1 */
+.adsmanager_ver_list {
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.adsmanager_ver_list li {
+	background-image: none;
+}
+
+.adsmanager_highlight {
+background-color:#FF5555;
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+    <name>Content - JA Facebook Like It</name>
+	<author>JoomlArt.com</author>
+	<creationDate>16 Nov 2010</creationDate>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.0.2</version>
+	<description>JA Facebook Like It Plugin Desc</description>
+	<files>
+		<filename plugin="plg_jafacebooklike">plg_jafacebooklike.php</filename>
+		<folder>plg_jafacebooklike/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_plg_jafacebooklike.ini</language>
+	</languages>
+	<params addpath="/plugins/content/plg_jafacebooklike/elements">
+		<param 
+			name="group" 
+			type="japaramhelper" 
+			function="@group" level="3">
+				<option for="source" value="both" hideRow="true">catsid,k2catsid</option>
+				<option for="source" value="com_k2" hideRow="true">k2catsid</option>
+				<option for="source" value="com_content" hideRow="true">catsid</option>
+		</param>		
+		<param 
+			name="settingcontent" 
+			type="japaramhelper" 
+			default="" 
+			function="@title" 
+			label="CONTENT SETTINGS" 
+			description="CONTENT SETTINGS" level="2"/>		
+		<param 
+			name="source" 
+			type="radio" 
+			default="" 
+			level="3"
+			label="Enable the Plugin for" 
+			description="Enable the plugin for default Joomla content, K2 or both.">
+				<option value="both">Both</option>
+				<option value="com_k2">K2</option>
+				<option value="com_content">Joomla Content</option>
+		</param>
+		
+		<param 
+			name="catsid" 
+			type="japaramhelper"
+			subtype="categories" 
+			default=""
+			level="3"
+			extension="com_content"
+			label="Select categories" 
+			multiple="true"
+			size="5"
+			description="Select categories desc" >
+		</param>
+		
+		<param 
+			name="k2catsid" 
+			type="categoryK2" 
+			default="" 
+			level="3"
+			label="Select K2 categories" 
+			description="SELECT K2 CATEGORIES DESC" />
+		
+		<param 
+			name="settingdisplay" 
+			type="japaramhelper" 
+			default="" 
+			level="2"
+			function="@title" 
+			label="Display Settings" 
+			description="Display Settings"/>
+		<param 
+			name="position" 
+			type="list" 
+			default="onContentBeforeDisplay" 
+			label="Position" 
+			level="3"
+			description="Choose the default position for the button" >
+				<option value="onBeforeDisplay">Before Display</option>
+				<option value="onAfterDisplayTitle">After Title Display</option>
+				<option value="onBeforeDisplayContent">Before Content Display</option>
+				<option value="onAfterDisplayContent">After Content Display</option>
+				<option value="onAfterDisplay">After Display</option>
+				
+				<option value="onK2BeforeDisplay">K2 Before Display</option>
+				<option value="onK2AfterDisplayTitle">K2 After Title Display</option>
+				<option value="onK2BeforeDisplayContent">K2 Before Content Display</option>
+				<option value="onK2AfterDisplayContent">K2 After Content Display</option>
+				<option value="onK2AfterDisplay">K2 After Display</option>
+		</param>		
+		<param 
+			name="display_on_list" 
+			type="radio" 
+			default="1" 
+			label="Display the button on the list pages" 
+			description="DISPLAY ON THE LIST PAGE DESC" >
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		
+		<param 
+			name="display_on_home" 
+			type="radio" 
+			default="1" 
+			level="3"
+			label="DISPLAY ON FRONTPAGE" 
+			description="DISPLAY ON FRONTPAGE DESC" >
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>		
+		
+		<param name="fb_embed" type="list" default="iframe" label="Embed Type" description="Embed Type desc" >
+			<option value="iframe">IFrame</option>
+			<option value="fbml">FBML</option>
+		</param>
+		<param name="app_id" type="text" default="" size="30" label="Facebook Application Id" description="Facebook Application Id desc" />
+		<param name="fb_layout" type="list" default="standard" label="Layout" description="Layout desc" >
+			<option value="standard">Standard</option>
+			<option value="button_count">Button Count</option>
+		</param>
+		<param name="fb_show_faces" type="list" default="1" label="Show Faces" description="Show Faces desc" >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="fb_width" type="text" default="450" label="Width" description="Width desc" />
+		<param name="fb_height" type="text" default="70" label="Height" description="Height Desc" />
+		<param name="fb_action" type="list" default="like" label="Action" description="Action desc" >
+			<option value="like">Like</option>
+			<option value="recommend">Recommend</option>
+		</param>
+		<param name="fb_font" type="list" default="arial" label="Font Style" description="Font Style desc" >
+			<option value="arial">arial</option>
+			<option value="lucida grande">lucida grande</option>
+			<option value="segoe ui">segoe ui</option>
+			<option value="tahoma">tahoma</option>
+			<option value="verdana">verdana</option>
+		</param>
+		<param name="fb_color" type="list" default="light" label="Color Scheme" description="Color Scheme desc" >
+			<option value="light">light</option>
+			<option value="dark">dark</option>
+		</param>
+		<param name="fb_align" type="list" default="left" label="Text Align" description="Text Align desc">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</param>
+	</params>
+</install>

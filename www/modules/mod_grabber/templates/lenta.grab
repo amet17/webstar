@@ -1,0 +1,16 @@
+{url}http://lenta.ru/{/url}
+{start_tag}<DIV class=m>{/start_tag}
+{end_tag}</DIV>{/end_tag}
+{show_tags}0{/show_tags}
+{starttext}{/starttext}
+{endtext}{/endtext}
+{usecache}{/usecache}
+{fromcharset}Windows-1251{/fromcharset}
+{tocharset}Utf-8{/tocharset}
+{atr}rel="nofollow" target="_blank"{/atr}
+{linkhref}http://lenta.ru{/linkhref}
+{linksrc}{/linksrc}
+{oldlinksrc}{/oldlinksrc}
+{oldlinkhref}href={/oldlinkhref}
+{howlong}{/howlong}
+{regexp}#$start(.*?)$end#s{/regexp}

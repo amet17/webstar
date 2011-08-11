@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+        <name>Random RSS</name>
+        <author>Cobus Taljaard</author>
+        <creationDate>13 August 2009</creationDate>
+        <copyright>(C) 2009 Cobus Taljaard. All Rights Reserved</copyright>
+        <license>GNU GPL</license>
+        <authorEmail>cobus.taljaard@gmail.com</authorEmail>
+        <authorUrl>www.joretha.com</authorUrl>
+        <version>0.9</version>
+        <description>
+        <![CDATA[
+        Parse a RSS feed and display a single, random item from the list of feed items.
+        ]]>
+        </description>
+        <files>
+                <filename module="mod_random_rss">mod_random_rss.php</filename>
+        </files>
+        <params>
+                <param name="linkTarget" type="radio" default="1" label="RSS Feed and Item Link Target" description="Open RSS feed and item links in same window or in a new window?">
+                        <option value="1">New Window</option>
+                        <option value="0">This Window</option>
+                </param>
+                <param name="noFollow" type="radio" default="1" label="Add rel='nofollow' to links" description="Stop search engine spiders from crawling RSS links">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="@spacer" type="spacer" default="" label="" description="" />
+                <param name="myRSSurl" type="text" size="60" default="" label="RSS Feed URL" description="Enter the URL of a RSS feed" />
+                <param name="myRSScache" type="text" size="6" default="3600" label="RSS Cache Time" description="Time in seconds before RSS feed cache is refreshed" />
+                  <param name="myRSStitle" type="radio" default="1" label="Feed Title" description="Do you want to display the RSS feed title?">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="myRSSdescription" type="radio" default="1" label="Feed Description" description="Do you want to display the RSS feed description?">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="@spacer" type="spacer" default="" label="" description="" />
+                <param name="myRSSitem_nos" type="text" size="5" default="0" label="Number of RSS Items" description="Number of most recent RSS items to show randomly. 0 = use all posted items. E.g 5 = show one of the last 5 feed items randomly." />
+                <param name="myRSSitem_title" type="radio" default="1" label="Item Title" description="Do you want to show the title of the random RSS item?">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="myRSSitem_content" type="radio" default="1" label="Item Content Text" description="Do you want to show the content text for the random RSS item?">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="myRSSitem_date" type="radio" default="1" label="Item Date" description="Do you want to show the published date of the random RSS item?">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="myRSSformat" type="radio" default="0" label="Feed Item Formatting" description="How to display the feed item">
+                        <option value="0">Continuous text without images</option>
+                        <option value="2">Continuous text with images</option>
+                        <option value="1">Original paragraphs without images</option>
+                        <option value="3">Original paragraphs with images</option>
+                </param>
+        </params>
+</install>

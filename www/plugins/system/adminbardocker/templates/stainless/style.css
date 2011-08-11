@@ -1,0 +1,50 @@
+/**
+ * Stylesheet for template: AdminPraise2
+ *
+ * @package     AdminBar Docker
+ * @version     1.1.1a
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/* TOOLBARS */
+
+.abd_dock div#ap-header,
+.abd_dock div#ap-toolbar,
+.abd_dock div#ap-crumbs,
+.abd_dock div#toolbar,
+.abd_dock div.header,
+.abd_dock ul#submenu {
+	display: block;
+	margin: 0;
+}
+.abd_dock ul#submenu {
+	border-top: none;
+	margin: 0 !important;
+}
+div#ap-header {
+	padding-right: 30px;
+}
+.abd_dock div#ap-header {
+	padding-right: 0px;
+	height: 31px;
+	margin-right: 5px; /* extra margin */
+}
+.abd_dock div#ap-toolbar {
+	border-top: 1px solid #494949;
+}
+.abd_dock div#toolbar a.toolbar {
+	padding: 0;
+	margin: 0 3px;
+}
+
+
+div#abd_spacer_top {
+	margin-bottom: 5px;
+}
+div#abd_dock_bottom {
+	margin-bottom: 64px;
+}

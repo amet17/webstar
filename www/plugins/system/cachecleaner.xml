@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
+<install type="plugin" group="system" version="1.5">
+	<name>System - Cache Cleaner</name>
+	<description>PLG_SYSTEM_CACHECLEANER_DESC</description>
+	<version>1.9.4</version>
+	<creationDate>July 2011</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="cachecleaner">cachecleaner.php</filename>
+		<folder>cachecleaner</folder>
+	</files>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/system/nonumberelements/elements">
+		<param name="@loadlanguage" type="loadlanguage" extension="plg_system_cachecleaner" />
+		<param name="@license" type="license" extension="CACHE_CLEANER" />
+		<param name="@version" type="version" extension="CACHE_CLEANER" xml="/plugins/system/cachecleaner.xml" />
+		<param name="@dependency" type="dependency"
+			label="CC_THE_MODULE"
+			file="/administrator/modules/mod_cachecleaner/mod_cachecleaner.php" />
+		<param name="@header" type="header"
+			label="CACHE_CLEANER"
+			description="CACHE_CLEANER_DESC"
+			xml="/plugins/system/cachecleaner.xml"
+			image="/plugins/system/cachecleaner/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/cachecleaner"
+			help_url="http://www.nonumber.nl/cachecleaner" />
+
+		<param name="@block_save_a" type="block" start="1" label="CC_AUTOMATIC_CLEANING_ON_SAVE" description="CC_AUTOMATIC_CLEANING_ON_SAVE_DESC" />
+			<param name="@block_save_admin_a" type="block" start="1" label="Administrator" />
+				<param name="auto_save_admin" type="radio" default="0" label="Enable" description="CC_AUTOMATIC_CLEANING_ON_SAVE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+				<param name="@toggler_save_admin_a" type="toggler" param="auto_save_admin" value="1" />
+					<param name="auto_save_admin_msg" type="radio" default="1" label="CC_SHOW_MESSAGE" description="CC_SHOW_MESSAGE_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</param>
+				<param name="@toggler_save_admin_b" type="toggler" />
+			<param name="@block_save_admin_b" type="block" end="1" />
+
+			<param name="@block_save_front_a" type="block" start="1" label="CC_FRONTEND" />
+				<param name="auto_save_front" type="radio" default="0" label="Enable" description="CC_AUTOMATIC_CLEANING_ON_SAVE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+				<param name="@toggler_save_front_a" type="toggler" param="auto_save_front" value="1" />
+					<param name="auto_save_front_msg" type="radio" default="0" label="CC_SHOW_MESSAGE" description="CC_SHOW_MESSAGE_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</param>
+				<param name="@toggler_save_front_b" type="toggler" />
+			<param name="@block_save_front_b" type="block" end="1" />
+
+			<param name="@toggler_save_a" type="toggler" param="auto_save_admin|auto_save_front" value="1|1" />
+				<param name="auto_save_tasks" type="text" default="save,apply" label="CC_SAVE_TASKS" description="CC_SAVE_TASKS_DESC" />
+			<param name="@toggler_save_b" type="toggler" />
+		<param name="@block_save_b" type="block" end="1" />
+
+		<param name="@block_interval_a" type="block" start="1" label="CC_AUTOMATIC_CLEANING_BY_INTERVAL" description="CC_AUTOMATIC_CLEANING_BY_INTERVAL_DESC" />
+			<param name="@block_interval_admin_a" type="block" start="1" label="Administrator" />
+				<param name="auto_interval_admin" type="radio" default="0" label="Enable" description="CC_AUTOMATIC_CLEANING_BY_INTERVAL_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+				<param name="@toggler_interval_admin_a" type="toggler" param="auto_interval_admin" value="1" />
+					<param name="auto_interval_admin_secs" type="text" default="3600" label="CC_SECONDS" description="CC_SECONDS_DESC" />
+					<param name="auto_interval_admin_msg" type="radio" default="0" label="CC_SHOW_MESSAGE" description="CC_SHOW_MESSAGE_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</param>
+				<param name="@toggler_interval_admin_b" type="toggler" />
+			<param name="@block_interval_admin_b" type="block" end="1" />
+
+			<param name="@block_interval_front_a" type="block" start="1"  label="CC_FRONTEND" />
+				<param name="auto_interval_front" type="radio" default="0" label="Enable" description="CC_AUTOMATIC_CLEANING_BY_INTERVAL_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+				<param name="@toggler_interval_front_a" type="toggler" param="auto_interval_front" value="1" />
+					<param name="auto_interval_front_secs" type="text" default="3600" label="CC_SECONDS" description="CC_SECONDS_DESC" />
+					<param name="auto_interval_front_msg" type="radio" default="0" label="CC_SHOW_MESSAGE" description="CC_SHOW_MESSAGE_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</param>
+				<param name="@toggler_interval_front_b" type="toggler" />
+			<param name="@block_interval_front_b" type="block" end="1" />
+		<param name="@block_interval_b" type="block" end="1" />
+
+		<param name="@block_secret_a" type="block" start="1" label="CC_FRONTEND_SECRET_URL" description="CC_FRONTEND_SECRET_URL_DESC" />
+			<param name="frontend_secret" type="text" default="" label="CC_FRONTEND_SECRET" description="CC_FRONTEND_SECRET_DESC" />
+		<param name="@block_secret_b" type="block" end="1" />
+
+		<param name="@block_party_a" type="block" start="1" label="CC_3RD_PARTY_CACHE" />
+			<param name="clean_cmslib" type="radio" default="1" label="CC_CMSLIB_CACHE" description="CC_CMSLIB_CACHE_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="clean_jre" type="radio" default="1" label="CC_JRE_CACHE" description="CC_JRE_CACHE_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+		<param name="@block_party_b" type="block" end="1" />
+
+		<param name="@block_folders_a" type="block" start="1" label="CC_CLEAN_OTHER_FOLDERS" />
+			<param name="clean_tmp" type="radio" default="1" label="CC_EMPTY_TMP_FOLDER" description="CC_EMPTY_TMP_FOLDER_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="clean_folders" type="textareaplus" width="300" default="" label="CC_CUSTOM_FOLDERS" description="CC_CUSTOM_FOLDERS_DESC" />
+			<param name="@toggler_folders_save_a" type="toggler" param="auto_save_admin|auto_save_front" value="1|1" />
+				<param name="auto_save_folders" type="radio" default="0" label="CC_AUTOMATIC_CLEANING_ON_SAVE" description="CC_AUTOMATIC_CLEANING_ON_SAVE_FOLDER_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+			<param name="@toggler_folders_save_b" type="toggler" />
+			<param name="@toggler_folders_interval_a" type="toggler" param="auto_interval_admin|auto_interval_front" value="1|1" />
+				<param name="auto_interval_folders" type="radio" default="0" label="CC_AUTOMATIC_CLEANING_BY_INTERVAL" description="CC_AUTOMATIC_CLEANING_BY_INTERVAL_FOLDER_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+			<param name="@toggler_folders_interval_b" type="toggler" />
+		<param name="@block_folders_b" type="block" end="1" />
+
+		<param name="@block_tables_a" type="block" start="1" label="CC_CLEAN_OTHER_TABLES" />
+			<param name="clean_tables" type="radio" default="0" label="CC_CLEAN_TABLES" description="CC_CLEAN_TABLES_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@toggler_tables_a" type="toggler" param="clean_tables" value="1" />
+				<param name="clean_tables_selection" type="textareaplus" width="300" default="" label="CC_TABLES" description="CC_TABLES_DESC" />
+				<param name="@toggler_tables_save_a" type="toggler" param="auto_save_admin|auto_save_front" value="1|1" />
+					<param name="auto_save_tables" type="radio" default="0" label="CC_AUTOMATIC_CLEANING_ON_SAVE" description="CC_AUTOMATIC_CLEANING_ON_SAVE_TABLES_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</param>
+				<param name="@toggler_tables_save_b" type="toggler" />
+				<param name="@toggler_tables_interval_a" type="toggler" param="auto_interval_admin|auto_interval_front" value="1|1" />
+					<param name="auto_interval_tables" type="radio" default="0" label="CC_AUTOMATIC_CLEANING_BY_INTERVAL" description="CC_AUTOMATIC_CLEANING_BY_INTERVAL_TABLES_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</param>
+				<param name="@toggler_tables_interval_b" type="toggler" />
+			<param name="@toggler_tables_b" type="toggler" />
+		<param name="@block_tables_b" type="block" end="1" />
+
+		<param name="@block_other_a" type="block" start="1" label="OTHER PARAMETERS" />
+			<param name="ignore_folders" type="textareaplus" width="300" default="" label="CC_IGNORE_FOLDERS" description="CC_IGNORE_FOLDERS_DESC" />
+			<param name="show_size" type="radio" default="1" label="CC_SHOW_SIZE" description="CC_SHOW_SIZE_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="log_path" type="text" size="40" default="/plugins/system/cachecleaner/" label="CC_LOG_PATH" description="CC_LOG_PATH_DESC" />
+		<param name="@block_other_b" type="block" end="1" />
+	</params>
+</install>

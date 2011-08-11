@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params group="mirror_module" addpath="/plugins/system/nonumberelements/elements">
+		<param name="mirror_module" type="radio" default="0" label="AMM_MIRROR_MODULE" description="AMM_MIRROR_MODULE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">AMM_REVERSE</option>
+		</param>
+		<param name="@toggler_mirror_a" type="toggler" param="mirror_module" value="1,2" />
+			<param name="mirror_moduleid" type="modules" size="1" showid="1" showtype="1" default="" label="AMM_MODULE" description="AMM_MODULE_DESC" />
+		<param name="@toggler_mirror_b" type="toggler" />
+	</params>
+
+	<params group="match_method">
+		<param name="match_method" type="radio" default="and" label="NN_MATCHING_METHOD" description="NN_MATCHING_METHOD_DESC">
+			<option value="and">NN_AND</option>
+			<option value="or">NN_OR</option>
+		</param>
+		<param name="@toggler_match_1a" type="toggler" param="match_method" value="and" />
+			<param name="@block_and" type="block" description="NN_AND_DESC" />
+		<param name="@toggler_match_1b" type="toggler" />
+		<param name="@toggler_match_2a" type="toggler" param="match_method" value="or" />
+			<param name="@block_or" type="block" description="NN_OR_DESC" />
+		<param name="@toggler_match_2b" type="toggler" />
+	</params>
+
+	<params group="show_ignores">
+		<param name="show_ignores" type="radio" default="2" label="NN_IGNORES" description="NN_IGNORES_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="2">Use Default</option>
+		</param>
+		<param name="@toggler_ignores_1a" type="toggler" param="show_ignores" value="-1,0" />
+			<param name="@block_ignores" type="block" description="NN_IGNORES_HIDE_DESC" />
+		<param name="@toggler_ignores_1b" type="toggler" />
+	</params>
+
+	<params group="assignto_menuitems">
+		<param name="@toggler_menuitems_a" type="toggler" param="show_ignores|assignto_menuitems" value="1,2|1,21,2" />
+			<param name="@block_menuitems_a" type="block" start="1" label="NN_MENU_ITEMS" />
+				<param name="assignto_menuitems" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_menuitems_1a" type="toggler" param="assignto_menuitems" value="1,2" />
+					<param name="assignto_menuitems_selection" type="menuitems" default="" label="NN_MENU_ITEMS" description="NN_MENU_ITEMS_DESC" />
+					<param name="assignto_menuitems_inc_children" type="radio" default="0" label="NN_ALSO_ON_CHILD_ITEMS" description="NN_ALSO_ON_CHILD_ITEMS_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+						<option value="2">NN_ONLY</option>
+					</param>
+					<param name="assignto_menuitems_inc_noitemid" type="radio" default="0" label="NN_INCLUDE_NO_ITEMID" description="NN_INCLUDE_NO_ITEMID_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</param>
+				<param name="@toggler_menuitems_1b" type="toggler" />
+			<param name="@block_menuitems_b" type="block" end="1" />
+		<param name="@toggler_menuitems_b" type="toggler" />
+	</params>
+
+	<params group="assignto_homepage">
+		<param name="@toggler_homepage_a" type="toggler" param="show_ignores|assignto_homepage" value="1,2|1,2" />
+			<param name="@block_homepage_a" type="block" start="1" label="NN_HOME_PAGE" />
+				<param name="assignto_homepage" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_YES_NO_DESC">
+					<option value="1">Yes</option>
+					<option value="2">No</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_homepage_1a" type="toggler" param="assignto_homepage" value="1,2" />
+					<param name="@block_homepage" type="block" description="NN_HOME_PAGE_DESC" />
+				<param name="@toggler_homepage_1b" type="toggler" />
+			<param name="@block_homepage_b" type="block" end="1" />
+		<param name="@toggler_homepage_b" type="toggler" />
+	</params>
+
+	<params group="assignto_content">
+		<param name="@toggler_content_a" type="toggler" param="show_ignores|assignto_secscats|assignto_articles" value="1,2|1,2|1,2" />
+			<param name="@block_content_a" type="block" start="1" label="NN_CONTENT" />
+				<param name="@toggler_secscats_a" type="toggler" param="show_ignores|assignto_secscats" value="1,2|1,2" />
+					<param name="@block_secscats_a" type="block" start="1" label="NN_SECTIONS_CATEGORIES" />
+						<param name="assignto_secscats" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_secscats_1a" type="toggler" param="assignto_secscats" value="1,2" />
+							<param name="assignto_secscats_inc" type="checkbox" default="inc_secs,inc_cats,inc_arts" label="NN_PAGE_TYPES" description="NN_PAGE_TYPES_DESC">
+								<option value="inc_secs">NN_SECTIONS</option>
+								<option value="inc_cats">NN_CATEGORIES</option>
+								<option value="inc_arts">NN_ARTICLES</option>
+								<option value="inc_others">NN_OTHERS</option>
+							</param>
+							<param name="assignto_secscats_selection" type="secscats" multiple="1" default="" label="NN_SECTIONS_CATEGORIES" description="NN_SECTIONS_CATEGORIES_DESC" />
+						<param name="@toggler_secscats_1b" type="toggler" />
+					<param name="@block_secscats_b" type="block" end="1" />
+				<param name="@toggler_secscats_b" type="toggler" />
+
+				<param name="@toggler_articles_a" type="toggler" param="show_ignores|assignto_articles" value="1,2|1,2" />
+					<param name="@block_articles_a" type="block" start="1" label="NN_ARTICLES" />
+						<param name="assignto_articles" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_articles_1a" type="toggler" param="assignto_articles" value="1,2" />
+							<param name="assignto_articles_selection" type="articles" multiple="1" default="" label="NN_ARTICLE_IDS" description="NN_ARTICLE_IDS_DESC" />
+							<param name="assignto_articles_keywords" type="textareaplus" texttype="regex" default="" label="NN_ARTICLE_KEYWORDS" description="NN_ARTICLE_KEYWORDS_DESC" />
+						<param name="@toggler_articles_1b" type="toggler" />
+					<param name="@block_articles_b" type="block" end="1" />
+				<param name="@toggler_articles_b" type="toggler" />
+			<param name="@block_content_b" type="block" end="1" />
+		<param name="@toggler_content_b" type="toggler" />
+	</params>
+
+	<params group="assignto_fc">
+		<param name="@toggler_fc_a" type="toggler" param="show_ignores|assignto_fccats|assignto_fctags|assignto_fctypes|assignto_fcitems" value="1,2|1,2|1,2|1,2|1,2" />
+			<param name="@block_fc_a" type="block" start="1" label="NN_FLEXICONTENT" />
+				<param name="@toggler_fccats_a" type="toggler" param="show_ignores|assignto_fccats" value="1,2|1,2" />
+					<param name="@block_fccats_a" type="block" start="1" label="NN_CATEGORIES" />
+						<param name="assignto_fccats" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_fccats_1a" type="toggler" param="assignto_fccats" value="1,2" />
+							<param name="assignto_fccats_selection" type="categoriesfc" multiple="1" default="0" label="NN_CATEGORIES" description="NN_CATEGORIES_DESC" />
+							<param name="assignto_fccats_inc_children" type="radio" default="0" label="NN_ALSO_ON_CHILD_ITEMS" description="NN_ALSO_ON_CHILD_ITEMS_DESC">
+								<option value="0">No</option>
+								<option value="1">Yes</option>
+								<option value="2">NN_ONLY</option>
+							</param>
+							<param name="assignto_fccats_inc" type="checkbox" default="inc_cats,inc_items" label="NN_PAGE_TYPES" description="NN_PAGE_TYPES_DESC">
+								<option value="inc_cats">NN_CATEGORIES</option>
+								<option value="inc_items">NN_ITEMS</option>
+							</param>
+						<param name="@toggler_fccats_1b" type="toggler" />
+					<param name="@block_fccats_b" type="block" end="1" />
+				<param name="@toggler_fccats_b" type="toggler" />
+
+				<param name="@toggler_fctags_a" type="toggler" param="show_ignores|assignto_fctags" value="1,2|1,2" />
+					<param name="@block_fctags_a" type="block" start="1" label="NN_TAGS" />
+						<param name="assignto_fctags" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_fctags_1a" type="toggler" param="assignto_fctags" value="1,2" />
+							<param name="assignto_fctags_selection" type="text" size="40" default="" label="NN_TAGS" description="NN_TAGS_DESC" />
+							<param name="assignto_fctags_inc" type="checkbox" default="inc_tags,inc_items" label="NN_PAGE_TYPES" description="NN_PAGE_TYPES_DESC">
+								<option value="inc_tags">NN_TAGS</option>
+								<option value="inc_items">NN_ITEMS</option>
+							</param>
+						<param name="@toggler_fctags_1b" type="toggler" />
+					<param name="@block_fctags_b" type="block" end="1" />
+				<param name="@toggler_fctags_b" type="toggler" />
+
+				<param name="@toggler_fctypes_a" type="toggler" param="show_ignores|assignto_fctypes" value="1,2|1,2" />
+					<param name="@block_fctypes_a" type="block" start="1" label="Types" />
+						<param name="assignto_fctypes" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_fctypes_1a" type="toggler" param="assignto_fctypes" value="1,2" />
+							<param name="assignto_fctypes_selection" type="typesfc" multiple="1" default="0" label="Types" description="Types of Items" />
+						<param name="@toggler_fctypes_1b" type="toggler" />
+					<param name="@block_fctypes_b" type="block" end="1" />
+				<param name="@toggler_fctypes_b" type="toggler" />
+
+				<param name="@toggler_fcitems_a" type="toggler" param="show_ignores|assignto_fcitems" value="1,2|1,2" />
+					<param name="@block_fcitems_a" type="block" start="1" label="NN_ITEMS" />
+						<param name="assignto_fcitems" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_fcitems_1a" type="toggler" param="assignto_fcitems" value="1,2" />
+							<param name="assignto_fcitems_selection" type="text" size="40" default="" label="NN_ITEM_IDS" description="NN_ITEM_IDS_DESC" />
+						<param name="@toggler_fcitems_1b" type="toggler" />
+					<param name="@block_fcitems_b" type="block" end="1" />
+				<param name="@toggler_fcitems_b" type="toggler" />
+			<param name="@block_fc_b" type="block" end="1" />
+		<param name="@toggler_fc_b" type="toggler" />
+	</params>
+
+	<params group="assignto_k2">
+		<param name="@toggler_k2_a" type="toggler" param="show_ignores|assignto_k2cats|assignto_k2tags|assignto_k2items" value="1,2|1,2|1,2|1,2" />
+			<param name="@block_k2_a" type="block" start="1" label="NN_K2" />
+				<param name="@toggler_k2cats_a" type="toggler" param="show_ignores|assignto_k2cats" value="1,2|1,2" />
+					<param name="@block_k2cats_a" type="block" start="1" label="NN_CATEGORIES" />
+						<param name="assignto_k2cats" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_k2cats_1a" type="toggler" param="assignto_k2cats" value="1,2" />
+							<param name="assignto_k2cats_selection" type="categoriesk2" multiple="1" default="0" label="NN_CATEGORIES" description="NN_CATEGORIES_DESC" />
+							<param name="assignto_k2cats_inc_children" type="radio" default="0" label="NN_ALSO_ON_CHILD_ITEMS" description="NN_ALSO_ON_CHILD_ITEMS_DESC">
+								<option value="0">No</option>
+								<option value="1">Yes</option>
+								<option value="2">NN_ONLY</option>
+							</param>
+							<param name="assignto_k2cats_inc" type="checkbox" default="inc_cats,inc_items" label="NN_PAGE_TYPES" description="NN_PAGE_TYPES_DESC">
+								<option value="inc_cats">NN_CATEGORIES</option>
+								<option value="inc_items">NN_ITEMS</option>
+							</param>
+						<param name="@toggler_k2cats_1b" type="toggler" />
+					<param name="@block_k2cats_b" type="block" end="1" />
+				<param name="@toggler_k2cats_b" type="toggler" />
+
+				<param name="@toggler_k2tags_a" type="toggler" param="show_ignores|assignto_k2tags" value="1,2|1,2" />
+					<param name="@block_k2tags_a" type="block" start="1" label="NN_TAGS" />
+						<param name="assignto_k2tags" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_k2tags_1a" type="toggler" param="assignto_k2tags" value="1,2" />
+							<param name="assignto_k2tags_selection" type="text" size="40" default="" label="NN_TAGS" description="NN_TAGS_DESC" />
+							<param name="assignto_k2tags_inc" type="checkbox" default="inc_tags,inc_items" label="NN_PAGE_TYPES" description="NN_PAGE_TYPES_DESC">
+								<option value="inc_tags">NN_TAGS</option>
+								<option value="inc_items">NN_ITEMS</option>
+							</param>
+						<param name="@toggler_k2tags_1b" type="toggler" />
+					<param name="@block_k2tags_b" type="block" end="1" />
+				<param name="@toggler_k2tags_b" type="toggler" />
+
+				<param name="@toggler_k2items_a" type="toggler" param="show_ignores|assignto_k2items" value="1,2|1,2" />
+					<param name="@block_k2items_a" type="block" start="1" label="NN_ITEMS" />
+						<param name="assignto_k2items" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_k2items_1a" type="toggler" param="assignto_k2items" value="1,2" />
+							<param name="assignto_k2items_selection" type="text" size="40" default="" label="NN_ITEM_IDS" description="NN_ITEM_IDS_DESC" />
+						<param name="@toggler_k2items_1b" type="toggler" />
+					<param name="@block_k2items_b" type="block" end="1" />
+				<param name="@toggler_k2items_b" type="toggler" />
+			<param name="@block_k2_b" type="block" end="1" />
+		<param name="@toggler_k2_b" type="toggler" />
+	</params>
+
+	<params group="assignto_mrcats">
+		<param name="@toggler_mrcats_a" type="toggler" param="show_ignores|assignto_mrcats" value="1,2|1,2" />
+			<param name="@block_mrcats_a" type="block" start="1" label="NN_MIGHTY_RESOURCE" />
+				<param name="assignto_mrcats" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_mrcats_1a" type="toggler" param="assignto_mrcats" value="1,2" />
+					<param name="assignto_mrcats_selection" type="categoriesmr" multiple="1" default="" label="NN_CATEGORIES" description="NN_CATEGORIES_DESC" />
+					<param name="assignto_mrcats_inc_children" type="radio" default="0" label="NN_ALSO_ON_CHILD_ITEMS" description="NN_ALSO_ON_CHILD_ITEMS_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+						<option value="2">NN_ONLY</option>
+					</param>
+					<param name="assignto_mrcats_inc" type="checkbox" default="inc_cats,inc_items" label="NN_PAGE_TYPES" description="NN_PAGE_TYPES_DESC">
+						<option value="inc_cats">NN_CATEGORIES</option>
+						<option value="inc_items">NN_ITEMS</option>
+					</param>
+				<param name="@toggler_mrcats_1b" type="toggler" />
+			<param name="@block_mrcats_b" type="block" end="1" />
+		<param name="@toggler_mrcats_b" type="toggler" />
+	</params>
+
+	<params group="assignto_zoocats">
+		<param name="@toggler_zoocats_a" type="toggler" param="show_ignores|assignto_zoocats" value="1,2|1,2" />
+			<param name="@block_zoocats_a" type="block" start="1" label="NN_ZOO" />
+				<param name="assignto_zoocats" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_zoocats_1a" type="toggler" param="assignto_zoocats" value="1,2" />
+					<param name="assignto_zoocats_selection" type="categorieszoo" multiple="1" default="0" label="NN_CATEGORIES" description="NN_CATEGORIES_DESC" />
+					<param name="assignto_zoocats_inc_children" type="radio" default="0" label="NN_ALSO_ON_CHILD_ITEMS" description="NN_ALSO_ON_CHILD_ITEMS_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+						<option value="2">NN_ONLY</option>
+					</param>
+					<param name="assignto_zoocats_inc" type="checkbox" default="inc_cats,inc_items" label="NN_PAGE_TYPES" description="NN_PAGE_TYPES_DESC">
+						<option value="inc_cats">NN_CATEGORIES</option>
+						<option value="inc_items">NN_ITEMS</option>
+					</param>
+				<param name="@toggler_zoocats_1b" type="toggler" />
+			<param name="@block_zoocats_b" type="block" end="1" />
+		<param name="@toggler_zoocats_b" type="toggler" />
+	</params>
+
+	<params group="assignto_components">
+		<param name="@toggler_components_a" type="toggler" param="show_ignores|assignto_components" value="1,2|1,2" />
+			<param name="@block_components_a" type="block" start="1" label="NN_COMPONENTS" />
+				<param name="assignto_components" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_components_1a" type="toggler" param="assignto_components" value="1,2" />
+					<param name="assignto_components_selection" type="components" admin="0" default="" label="NN_COMPONENTS" description="NN_COMPONENTS_DESC" />
+				<param name="@toggler_components_1b" type="toggler" />
+			<param name="@block_components_b" type="block" end="1" />
+		<param name="@toggler_components_b" type="toggler" />
+	</params>
+
+	<params group="assignto_urls">
+		<param name="@toggler_urls_a" type="toggler" param="show_ignores|assignto_urls" value="1,2|1,2" />
+			<param name="@block_urls_a" type="block" start="1" label="NN_URL" />
+				<param name="assignto_urls" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_urls_1a" type="toggler" param="assignto_urls" value="1,2" />
+					<param name="@toggler_urls_sef_1a" type="toggler" param="use_sef" value="1" />
+						<param name="show_url_field" type="radio" default="0" label="NN_SHOW_URL_FIELD" description="NN_SHOW_URL_FIELD_DESC">
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</param>
+					<param name="@toggler_urls_sef_1b" type="toggler" />
+					<param name="@toggler_urls_sef_2a" type="toggler" param="use_sef|show_url_field" value="0,2|1" />
+						<param name="assignto_urls_selection" type="textareaplus" texttype="regex" default="" label="NN_URL_PARTS_NON_SEF" description="NN_URL_PARTS_NON_SEF_DESC" />
+					<param name="@toggler_urls_sef_2b" type="toggler" />
+
+					<param name="@toggler_urls_sef_3a" type="toggler" param="use_sef" value="0" />
+						<param name="show_url_field_sef" type="radio" default="0" label="NN_SHOW_URL_FIELD_SEF" description="NN_SHOW_URL_FIELD_SEF_DESC">
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</param>
+					<param name="@toggler_urls_sef_3b" type="toggler" />
+					<param name="@toggler_urls_sef_4a" type="toggler" param="use_sef|show_url_field_sef" value="1,2|1" />
+						<param name="assignto_urls_selection_sef" type="textareaplus" texttype="regex" default="" label="NN_URL_PARTS_SEF" description="NN_URL_PARTS_SEF_DESC" />
+					<param name="@toggler_urls_sef_4b" type="toggler" />
+					<param name="@block_urls" type="block" description="NN_URL_PARTS_DESC" />
+				<param name="@toggler_urls_1b" type="toggler" />
+			<param name="@block_urls_b" type="block" end="1" />
+		<param name="@toggler_urls_b" type="toggler" />
+	</params>
+
+	<params group="assignto_browsers">
+		<param name="@toggler_browsers_a" type="toggler" param="show_ignores|assignto_browsers" value="1,2|1,2" />
+			<param name="@block_browsers_a" type="block" start="1" label="NN_BROWSERS" />
+				<param name="assignto_browsers" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_browsers_1a" type="toggler" param="assignto_browsers" value="1,2" />
+					<param name="@block_browsers" type="block" description="NN_BROWSERS_DESC" />
+					<param name="assignto_browsers_selection" type="browsers" default="" label="NN_BROWSERS" description="NN_BROWSERS_DESC" />
+				<param name="@toggler_browsers_1b" type="toggler" />
+			<param name="@block_browsers_b" type="block" end="1" />
+		<param name="@toggler_browsers_b" type="toggler" />
+	</params>
+
+	<params group="assignto_date">
+		<param name="@toggler_group_date_a" type="toggler" param="show_ignores|assignto_date|assignto_seasons|assignto_months|assignto_days|assignto_time" value="1,2|1,2|1,2|1,2|1,2|1,2" />
+			<param name="@block_group_date_a" type="block" start="1" label="NN_DATE_TIME" />
+				<param name="@block_group_date_1" type="block" nostyle="1" description="NN_DATE_TIME_DESC" />
+				<param name="@block_group_date_2" type="datetime" format="%Y-%m-%d %H:%M"  label="NN_CURRENT_DATE" />
+
+				<param name="@toggler_date_a" type="toggler" param="show_ignores|assignto_date" value="1,2|1,2" />
+					<param name="@block_date_a" type="block" start="1" label="NN_DATE" />
+						<param name="assignto_date" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_date_1a" type="toggler" param="assignto_date" value="1,2" />
+							<param name="assignto_date_publish_up" type="calendar" format="%Y-%m-%d 00:00" default="0000-00-00 00:00" label="NN_START_PUBLISHING" description="NN_START_PUBLISHING_DESC" />
+							<param name="assignto_date_publish_down" type="calendar" format="%Y-%m-%d 00:00" default="0000-00-00 00:00" label="NN_FINISH_PUBLISHING" description="NN_FINISH_PUBLISHING_DESC" />
+						<param name="@toggler_date_1b" type="toggler" />
+					<param name="@block_date_b" type="block" end="1" />
+				<param name="@toggler_date_b" type="toggler" />
+
+				<param name="@toggler_seasons_a" type="toggler" param="show_ignores|assignto_seasons" value="1,2|1,2" />
+					<param name="@block_seasons_a" type="block" start="1" label="NN_SEASONS" />
+						<param name="assignto_seasons" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_seasons_1a" type="toggler" param="assignto_seasons" value="1,2" />
+							<param name="assignto_seasons_selection" type="checkbox" newlines="1" default="" label="NN_SEASONS" description="NN_SEASONS_DESC">
+								<option value="winter">NN_WINTER</option>
+								<option value="spring">NN_SPRING</option>
+								<option value="summer">NN_SUMMER</option>
+								<option value="fall">NN_FALL</option>
+							</param>
+							<param name="assignto_seasons_hemisphere" type="radio" default="northern" label="NN_HEMISPHERE" description="NN_HEMISPHERE_DESC">
+								<option value="northern">NN_NORTHERN</option>
+								<option value="southern">NN_SOUTHERN</option>
+								<option value="australia">NN_AUSTRALIA</option>
+							</param>
+						<param name="@toggler_seasons_1b" type="toggler" />
+					<param name="@block_seasons_b" type="block" end="1" />
+				<param name="@toggler_seasons_b" type="toggler" />
+
+				<param name="@toggler_months_a" type="toggler" param="show_ignores|assignto_months" value="1,2|1,2" />
+					<param name="@block_months_a" type="block" start="1" label="NN_MONTHS" />
+						<param name="assignto_months" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_months_1a" type="toggler" param="assignto_months" value="1,2" />
+							<param name="assignto_months_selection" type="checkbox" newlines="1" default="" label="NN_MONTHS" description="NN_MONTHS_DESC">
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+								<option value="6">June</option>
+								<option value="7">July</option>
+								<option value="8">August</option>
+								<option value="9">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
+							</param>
+						<param name="@toggler_months_1b" type="toggler" />
+					<param name="@block_months_b" type="block" end="1" />
+				<param name="@toggler_months_b" type="toggler" />
+
+				<param name="@toggler_days_a" type="toggler" param="show_ignores|assignto_days" value="1,2|1,2" />
+					<param name="@block_days_a" type="block" start="1" label="NN_DAYS" />
+						<param name="assignto_days" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_days_1a" type="toggler" param="assignto_days" value="1,2" />
+							<param name="assignto_days_selection" type="checkbox" newlines="1" default="" label="NN_DAYS" description="NN_DAYS_DESC">
+								<option value="1">Monday</option>
+								<option value="2">Tuesday</option>
+								<option value="3">Wednesday</option>
+								<option value="4">Thursday</option>
+								<option value="5">Friday</option>
+								<option value="6">Saturday</option>
+								<option value="7">Sunday</option>
+							</param>
+						<param name="@toggler_days_1b" type="toggler" />
+					<param name="@block_days_b" type="block" end="1" />
+				<param name="@toggler_days_b" type="toggler" />
+
+				<param name="@toggler_time_a" type="toggler" param="show_ignores|assignto_time" value="1,2|1,2" />
+					<param name="@block_time_a" type="block" start="1" label="NN_TIME" />
+						<param name="assignto_time" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+							<option value="1">NN_SELECTION</option>
+							<option value="2">NN_EXCLUDE_SELECTION</option>
+							<option value="0">NN_IGNORE</option>
+						</param>
+						<param name="@toggler_time_1a" type="toggler" param="assignto_time" value="1,2" />
+							<param name="assignto_time_publish_up" type="text" size="10" default="0:00" label="NN_START_PUBLISHING" description="NN_TIME_START_PUBLISHING_DESC" />
+							<param name="assignto_time_publish_down" type="text" size="10" default="0:00" label="NN_FINISH_PUBLISHING" description="NN_TIME_FINISH_PUBLISHING_DESC" />
+						<param name="@toggler_time_1b" type="toggler" />
+					<param name="@block_time_b" type="block" end="1" />
+				<param name="@toggler_time_b" type="toggler" />
+
+			<param name="@block_group_date_b" type="block" end="1" />
+		<param name="@toggler_group_date_b" type="toggler" />
+	</params>
+
+	<params group="assignto_users_open">
+		<param name="@toggler_group_users_a" type="toggler" param="show_ignores|assignto_usergrouplevels|assignto_users" value="1,2|1,2|1,2" />
+		<param name="@block_group_users_a" type="block" start="1" label="NN_USERS" />
+	</params>
+	<params group="assignto_users_close">
+		<param name="@block_group_users_b" type="block" end="1" />
+		<param name="@toggler_group_users_b" type="toggler" />
+	</params>
+
+	<params group="assignto_usergrouplevels">
+		<param name="@toggler_usergrouplevels_a" type="toggler" param="show_ignores|assignto_usergrouplevels" value="1,2|1,2" />
+			<param name="@block_usergrouplevels_a" type="block" start="1" label="NN_USER_GROUP_LEVELS" />
+				<param name="assignto_usergrouplevels" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_usergrouplevels_1a" type="toggler" param="assignto_usergrouplevels" value="1,2" />
+					<param name="assignto_usergrouplevels_selection" type="grouplevel" multiple="1" notregistered="1" default="" label="NN_USER_GROUP_LEVELS" description="NN_USER_GROUP_LEVELS_DESC" />
+				<param name="@toggler_usergrouplevels_1b" type="toggler" />
+			<param name="@block_usergrouplevels_b" type="block" end="1" />
+		<param name="@toggler_usergrouplevels_b" type="toggler" />
+	</params>
+
+	<params group="assignto_users">
+		<param name="@toggler_users_a" type="toggler" param="show_ignores|assignto_users" value="1,2|1,2" />
+			<param name="@block_users_a" type="block" start="1" label="NN_USERS" />
+				<param name="assignto_users" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_users_1a" type="toggler" param="assignto_users" value="1,2" />
+					<param name="assignto_users_selection" type="text" default="" label="NN_USER_IDS" description="NN_USER_IDS_DESC" />
+				<param name="@toggler_users_1b" type="toggler" />
+			<param name="@block_users_b" type="block" end="1" />
+		<param name="@toggler_users_b" type="toggler" />
+	</params>
+
+	<params group="assignto_languages">
+		<param name="@toggler_languages_a" type="toggler" param="show_ignores|assignto_languages" value="1,2|1,2" />
+			<param name="@block_languages_a" type="block" start="1" label="NN_LANGUAGES" />
+				<param name="assignto_languages" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_languages_1a" type="toggler" param="assignto_languages" value="1,2" />
+					<param name="assignto_languages_selection" type="languages" multiple="1" default="" label="NN_LANGUAGES" description="NN_LANGUAGES_DESC" />
+				<param name="@toggler_languages_1b" type="toggler" />
+			<param name="@block_languages_b" type="block" end="1" />
+		<param name="@toggler_languages_b" type="toggler" />
+	</params>
+
+	<params group="assignto_templates">
+		<param name="@toggler_templates_a" type="toggler" param="show_ignores|assignto_templates" value="1,2|1,2" />
+			<param name="@block_templates_a" type="block" start="1" label="NN_TEMPLATES" />
+				<param name="assignto_templates" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_templates_1a" type="toggler" param="assignto_templates" value="1,2" />
+					<param name="assignto_templates_selection" type="templates" multiple="1" subtemplates="0" show_system="0" default="" label="NN_TEMPLATES" description="NN_TEMPLATES_DESC" />
+				<param name="@toggler_templates_1b" type="toggler" />
+			<param name="@block_templates_b" type="block" end="1" />
+		<param name="@toggler_templates_b" type="toggler" />
+	</params>
+
+	<params group="assignto_php">
+		<param name="@toggler_php_a" type="toggler" param="show_ignores|assignto_php" value="1,2|1,2" />
+			<param name="@block_php_a" type="block" start="1" label="NN_PHP" />
+				<param name="assignto_php" type="radio" default="0" label="NN_ASSIGN_TO" description="NN_ASSIGN_TO_DESC">
+					<option value="1">NN_SELECTION</option>
+					<option value="2">NN_EXCLUDE_SELECTION</option>
+					<option value="0">NN_IGNORE</option>
+				</param>
+				<param name="@toggler_php_1a" type="toggler" param="assignto_php" value="1,2" />
+					<param name="assignto_php_selection" type="textareaplus" texttype="regex" default="" label="NN_PHP" description="NN_PHP_DESC" />
+				<param name="@toggler_php_1b" type="toggler" />
+			<param name="@block_php_b" type="block" end="1" />
+		<param name="@toggler_php_b" type="toggler" />
+	</params>
+</config>

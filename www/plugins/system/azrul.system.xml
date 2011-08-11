@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>Azrul System Mambot For Joomla</name>
+	<author>JomSocial Team</author>
+	<creationDate>4 Nov 2010</creationDate>
+	<copyright>Copyright 2008 - 2010 by Slashes &amp; Dots Sdn Bhd. Все права защищены</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>www.azrul.com</authorUrl>
+	<version>3.0</version>
+	<description><![CDATA[
+	Ajax System for Joomla, Azrul.com/JomSocial.com
+	]]></description>
+	<files>
+		<filename plugin="azrul.system">azrul.system.php</filename>
+		<folder>pc_includes</folder>
+	</files>
+	<params>
+		<param name="compress" type="list" default="1" label="Сжимать JavaScript" description="Укажите следует ли сжимать JavaScript?. Уменьшает использование полосы пропускания в два раза.">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+	</params>
+</install>

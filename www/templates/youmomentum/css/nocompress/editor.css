@@ -1,0 +1,35 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Copyright ©2006-2009 Youjoomla LLC. All Rights Reserved.           ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- THIS IS NOT FREE SOFTWARE ---------------- #      ||
+|| # http://www.youjoomla.com | http://www.youjoomla.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+body{text-align:left; padding:0; margin:0 0 10px 0; font-family:Verdana,Arial,Helvetica,sans-serif; color:#555;  line-height:120%; background-color:#FFF}
+img.border{}
+.special{}
+.error{}
+.message{}
+.tips{}
+.highlight{}
+pre, .code{}
+div.blockquote{}
+div.blockquote blockquote{}
+.dropcap{}
+p.sticky{}
+p.pin{}
+p.clip{}
+p.down{}
+.blocknumber{}
+.bignumber{}
+ul.video li, 
+li.video, 
+li.video:hover, 
+ul.check li, 
+li.check, 
+li.check:hover, 
+ul.star li, 
+li.star, 
+li.star:hover{}
+

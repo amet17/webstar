@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>Best Alias</name>
+	<author>Ageent</author>
+	<creationDate>September 2009</creationDate>
+	<authorEmail>ageent.ua@gmail.com</authorEmail>
+    <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorUrl>www.ageent.ru</authorUrl>
+	<description>Transliterates name title, menu items, categories and sections.</description>
+	<files>
+		<filename plugin="ag.translate">ag.translate.php</filename>
+		<filename>jquery/ajax_translate.js</filename>
+		<filename>jquery/standart.js</filename>
+		<filename>jquery/jquery.js</filename>
+	</files>
+	
+	
+	<params>
+		<param name="on_or_off" type="radio" default="1" label="Include translator" description="If yes, will be translated using google. If not, then simply translate into Latin.">
+			<option value="0">Not</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

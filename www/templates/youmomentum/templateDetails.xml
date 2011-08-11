@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+  <name>Youmomentum</name>
+  <creationDate>6-28-2010</creationDate>
+  <author>Youjoomla LLC</author>
+  <copyright>Youjoomla LLC</copyright>
+  <authorEmail>youjoomlallc@gmail.com</authorEmail>
+  <authorUrl>www.youjoomla.com</authorUrl>
+  <version>1.0</version>
+  <description>Youmomentum  Joomla Template by Youjoomla.com. Unique layout options and color variations.
+    <![CDATA[<h1>Youmomentum  Template by Youjoomla.com</h1>
+      
+      <img src="../templates/youmomentum/images/logotm.jpg" /><br />Youmomentum Joomla  Template by Youjoomla.com.   This  template is for Youjoomla Joomla Template Club customers only. <a href="http://www.youjoomla.com">Youjoomla Temlplates Club</a> home page.
+      <br></br>
+      
+      <b>Version 1.01</b><br />
+      <ul>
+      <li>Initial Release</li>
+      </ul>]]>
+  </description>
+	<files>
+		<filename>component.php</filename>
+		<filename>css/blue.php</filename>
+		<filename>css/bordo.php</filename>
+		<filename>css/brown.php</filename>
+		<filename>css/darkblue.php</filename>
+		<filename>css/darkgreen.php</filename>
+		<filename>css/darkorange.php</filename>
+		<filename>css/iepngfix.htc</filename>
+		<filename>css/ifie.php</filename>
+		<filename>css/index.html</filename>
+		<filename>css/layout.php</filename>
+		<filename>css/menus.php</filename>
+		<filename>css/nocompress/index.html</filename>
+		<filename>css/orange.php</filename>
+		<filename>css/template.php</filename>
+		<filename>css/template_rtl.php</filename>
+		<filename>css/typo.php</filename>
+		<filename>elements/index.html</filename>
+		<filename>elements/yjsgmenuitems.php</filename>
+		<filename>elements/yjsgparamtitle.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>head.php</filename>
+		<filename>html/com_contact/category/default.php</filename>
+		<filename>html/com_contact/category/index.html</filename>
+		<filename>html/com_contact/index.html</filename>
+		<filename>html/com_content/article/default.php</filename>
+		<filename>html/com_content/article/index.html</filename>
+		<filename>html/com_content/category/blog_item.php</filename>
+		<filename>html/com_content/category/default.php</filename>
+		<filename>html/com_content/category/index.html</filename>
+		<filename>html/com_content/frontpage/default.php</filename>
+		<filename>html/com_content/frontpage/default_item.php</filename>
+		<filename>html/com_content/frontpage/index.html</filename>
+		<filename>html/com_content/index.html</filename>
+		<filename>html/com_content/section/blog_item.php</filename>
+		<filename>html/com_content/section/default.php</filename>
+		<filename>html/com_content/section/index.html</filename>
+		<filename>html/com_newsfeeds/categories/default.php</filename>
+		<filename>html/com_newsfeeds/categories/index.html</filename>
+		<filename>html/com_newsfeeds/category/default.php</filename>
+		<filename>html/com_newsfeeds/category/default_items.php</filename>
+		<filename>html/com_newsfeeds/category/index.html</filename>
+		<filename>html/com_newsfeeds/index.html</filename>
+		<filename>html/com_newsfeeds/newsfeed/default.php</filename>
+		<filename>html/com_newsfeeds/newsfeed/index.html</filename>
+		<filename>html/com_search/index.html</filename>
+		<filename>html/com_search/search/default_form.php</filename>
+		<filename>html/com_search/search/index.html</filename>
+		<filename>html/com_weblinks/categories/default.php</filename>
+		<filename>html/com_weblinks/categories/index.html</filename>
+		<filename>html/com_weblinks/category/default.php</filename>
+		<filename>html/com_weblinks/category/index.html</filename>
+		<filename>html/com_weblinks/index.html</filename>
+		<filename>html/index.html</filename>
+		<filename>html/modules.php</filename>
+		<filename>html/mod_mainmenu/default.php</filename>
+		<filename>html/mod_mainmenu/index.html</filename>
+		<filename>html/mod_poll/default.php</filename>
+		<filename>html/mod_poll/index.html</filename>
+		<filename>html/pagination.php</filename>
+		<filename>images/bg/index.html</filename>
+		<filename>images/blue/index.html</filename>
+		<filename>images/blue/topmenu/index.html</filename>
+		<filename>images/bordo/index.html</filename>
+		<filename>images/bordo/topmenu/index.html</filename>
+		<filename>images/brown/index.html</filename>
+		<filename>images/brown/topmenu/index.html</filename>
+		<filename>images/darkblue/index.html</filename>
+		<filename>images/darkblue/topmenu/index.html</filename>
+		<filename>images/darkblue/typ/index.html</filename>
+		<filename>images/darkgreen/index.html</filename>
+		<filename>images/darkgreen/topmenu/index.html</filename>
+		<filename>images/darkgreen/typ/index.html</filename>
+		<filename>images/darkorange/index.html</filename>
+		<filename>images/darkorange/topmenu/index.html</filename>
+		<filename>images/darkorange/typ/index.html</filename>
+		<filename>images/index.html</filename>
+		<filename>images/orange/index.html</filename>
+		<filename>images/orange/topmenu/index.html</filename>
+		<filename>images/typ/index.html</filename>
+		<filename>index.php</filename>
+		<filename>layouts/grids/index.html</filename>
+		<filename>layouts/grids/yjsg0.php</filename>
+		<filename>layouts/grids/yjsg1.php</filename>
+		<filename>layouts/grids/yjsg2.php</filename>
+		<filename>layouts/index.html</filename>
+		<filename>layouts/layout1.php</filename>
+		<filename>layouts/layout2.php</filename>
+		<filename>layouts/layout3.php</filename>
+		<filename>links.php</filename>
+		<filename>params.ini</filename>
+		<filename>settings.php</filename>
+		<filename>src/index.html</filename>
+		<filename>src/mouseover.js</filename>
+		<filename>styleswitcher.php</filename>
+	</files>
+	 <positions>
+    <position>top</position>
+    <position>header</position>
+    <position>footer</position>
+    <position>inset</position>
+    <position>bottom</position>
+	<position>topout</position>
+	<position>bottomout</position>
+    <position>banner</position>
+    <position>breadcrumb</position>
+    <position>left</position>
+    <position>cpanel</position>
+    <position>adv1</position>
+    <position>adv2</position>
+    <position>adv3</position>
+    <position>adv4</position>
+    <position>adv5</position>
+    <position>right</position>
+    <position>user1</position>
+    <position>user2</position>
+    <position>user3</position>
+    <position>user4</position>
+    <position>user5</position>
+    <position>user6</position>
+    <position>user7</position>
+    <position>user8</position>
+    <position>user9</position>
+    <position>user10</position>
+  </positions>
+	<images>
+		<filename>css/blank.gif</filename>
+		<filename>images/arrow.png</filename>
+		<filename>images/arrow_left.gif</filename>
+		<filename>images/bg/dark.jpg</filename>
+		<filename>images/bg/dark2.jpg</filename>
+		<filename>images/bg/gray.jpg</filename>
+		<filename>images/bg/gray2.jpg</filename>
+		<filename>images/blank.gif</filename>
+		<filename>images/blue/bodyli.gif</filename>
+		<filename>images/blue/bodyli_rtl.gif</filename>
+		<filename>images/blue/bot_sep.gif</filename>
+		<filename>images/blue/footer_inset.gif</filename>
+		<filename>images/blue/li_bot_a.gif</filename>
+		<filename>images/blue/logo.png</filename>
+		<filename>images/blue/mainlevel.gif</filename>
+		<filename>images/blue/readb.gif</filename>
+		<filename>images/blue/readm_arrow.jpg</filename>
+		<filename>images/blue/readon_ll.gif</filename>
+		<filename>images/blue/readon_rl.gif</filename>
+		<filename>images/blue/topmenu/active_l.png</filename>
+		<filename>images/blue/topmenu/active_r.png</filename>
+		<filename>images/blue/topmenu/arrow_right.gif</filename>
+		<filename>images/blue/topmenu/hover_l.png</filename>
+		<filename>images/blue/topmenu/hover_r.png</filename>
+		<filename>images/blue/topmenu/normal_l.png</filename>
+		<filename>images/blue/topmenu/normal_r.png</filename>
+		<filename>images/blue/ybuttons.gif</filename>
+		<filename>images/blue/yjsg2_inset.gif</filename>
+		<filename>images/bordo/bodyli.gif</filename>
+		<filename>images/bordo/bodyli_rtl.gif</filename>
+		<filename>images/bordo/bot_sep.gif</filename>
+		<filename>images/bordo/footer_inset.gif</filename>
+		<filename>images/bordo/li_bot_a.gif</filename>
+		<filename>images/bordo/logo.png</filename>
+		<filename>images/bordo/mainlevel.gif</filename>
+		<filename>images/bordo/readb.gif</filename>
+		<filename>images/bordo/readm_arrow.jpg</filename>
+		<filename>images/bordo/readon_ll.gif</filename>
+		<filename>images/bordo/readon_rl.gif</filename>
+		<filename>images/bordo/topmenu/active_l.png</filename>
+		<filename>images/bordo/topmenu/active_r.png</filename>
+		<filename>images/bordo/topmenu/arrow_right.gif</filename>
+		<filename>images/bordo/topmenu/hover_l.png</filename>
+		<filename>images/bordo/topmenu/hover_r.png</filename>
+		<filename>images/bordo/topmenu/normal_l.png</filename>
+		<filename>images/bordo/topmenu/normal_r.png</filename>
+		<filename>images/bordo/ybuttons.gif</filename>
+		<filename>images/bordo/yjsg2_inset.gif</filename>
+		<filename>images/botm_shade_b.png</filename>
+		<filename>images/botm_shade_top.png</filename>
+		<filename>images/brown/bodyli.gif</filename>
+		<filename>images/brown/bodyli_rtl.gif</filename>
+		<filename>images/brown/bot_sep.gif</filename>
+		<filename>images/brown/footer_inset.gif</filename>
+		<filename>images/brown/li_bot_a.gif</filename>
+		<filename>images/brown/logo.png</filename>
+		<filename>images/brown/mainlevel.gif</filename>
+		<filename>images/brown/readb.gif</filename>
+		<filename>images/brown/readm_arrow.jpg</filename>
+		<filename>images/brown/readon_ll.gif</filename>
+		<filename>images/brown/readon_rl.gif</filename>
+		<filename>images/brown/topmenu/active_l.png</filename>
+		<filename>images/brown/topmenu/active_r.png</filename>
+		<filename>images/brown/topmenu/arrow_right.gif</filename>
+		<filename>images/brown/topmenu/hover_l.png</filename>
+		<filename>images/brown/topmenu/hover_r.png</filename>
+		<filename>images/brown/topmenu/normal_l.png</filename>
+		<filename>images/brown/topmenu/normal_r.png</filename>
+		<filename>images/brown/ybuttons.gif</filename>
+		<filename>images/brown/yjsg2_inset.gif</filename>
+		<filename>images/darkblue/bodyli.gif</filename>
+		<filename>images/darkblue/bodyli_rtl.gif</filename>
+		<filename>images/darkblue/bot_sep.gif</filename>
+		<filename>images/darkblue/font_decrease.gif</filename>
+		<filename>images/darkblue/font_increase.gif</filename>
+		<filename>images/darkblue/footer_inset.gif</filename>
+		<filename>images/darkblue/k2rss.gif</filename>
+		<filename>images/darkblue/li_bot_a.gif</filename>
+		<filename>images/darkblue/loading.gif</filename>
+		<filename>images/darkblue/loading2.gif</filename>
+		<filename>images/darkblue/logo.png</filename>
+		<filename>images/darkblue/mainlevel.gif</filename>
+		<filename>images/darkblue/nav_bg.png</filename>
+		<filename>images/darkblue/readb.gif</filename>
+		<filename>images/darkblue/readm_arrow.jpg</filename>
+		<filename>images/darkblue/readon_ll.gif</filename>
+		<filename>images/darkblue/readon_rl.gif</filename>
+		<filename>images/darkblue/topmenu/active_l.png</filename>
+		<filename>images/darkblue/topmenu/active_r.png</filename>
+		<filename>images/darkblue/topmenu/arrow_right.gif</filename>
+		<filename>images/darkblue/topmenu/hover_l.png</filename>
+		<filename>images/darkblue/topmenu/hover_r.png</filename>
+		<filename>images/darkblue/topmenu/normal_l.png</filename>
+		<filename>images/darkblue/topmenu/normal_r.png</filename>
+		<filename>images/darkblue/typ/clip.gif</filename>
+		<filename>images/darkblue/typ/down.gif</filename>
+		<filename>images/darkblue/typ/error.gif</filename>
+		<filename>images/darkblue/typ/info.gif</filename>
+		<filename>images/darkblue/typ/pin.gif</filename>
+		<filename>images/darkblue/typ/qlg.gif</filename>
+		<filename>images/darkblue/typ/qrg.gif</filename>
+		<filename>images/darkblue/typ/sticky.gif</filename>
+		<filename>images/darkblue/typ/tips.gif</filename>
+		<filename>images/darkblue/ybuttons.gif</filename>
+		<filename>images/darkblue/yjsg2_inset.gif</filename>
+		<filename>images/darkgreen/bodyli.gif</filename>
+		<filename>images/darkgreen/bodyli_rtl.gif</filename>
+		<filename>images/darkgreen/bot_sep.gif</filename>
+		<filename>images/darkgreen/font_decrease.gif</filename>
+		<filename>images/darkgreen/font_increase.gif</filename>
+		<filename>images/darkgreen/footer_inset.gif</filename>
+		<filename>images/darkgreen/k2rss.gif</filename>
+		<filename>images/darkgreen/li_bot_a.gif</filename>
+		<filename>images/darkgreen/loading.gif</filename>
+		<filename>images/darkgreen/loading2.gif</filename>
+		<filename>images/darkgreen/logo.png</filename>
+		<filename>images/darkgreen/mainlevel.gif</filename>
+		<filename>images/darkgreen/nav_bg.png</filename>
+		<filename>images/darkgreen/readb.gif</filename>
+		<filename>images/darkgreen/readm_arrow.jpg</filename>
+		<filename>images/darkgreen/readon_ll.gif</filename>
+		<filename>images/darkgreen/readon_rl.gif</filename>
+		<filename>images/darkgreen/topmenu/active_l.png</filename>
+		<filename>images/darkgreen/topmenu/active_r.png</filename>
+		<filename>images/darkgreen/topmenu/arrow_right.gif</filename>
+		<filename>images/darkgreen/topmenu/hover_l.png</filename>
+		<filename>images/darkgreen/topmenu/hover_r.png</filename>
+		<filename>images/darkgreen/topmenu/normal_l.png</filename>
+		<filename>images/darkgreen/topmenu/normal_r.png</filename>
+		<filename>images/darkgreen/typ/clip.gif</filename>
+		<filename>images/darkgreen/typ/down.gif</filename>
+		<filename>images/darkgreen/typ/error.gif</filename>
+		<filename>images/darkgreen/typ/info.gif</filename>
+		<filename>images/darkgreen/typ/pin.gif</filename>
+		<filename>images/darkgreen/typ/qlg.gif</filename>
+		<filename>images/darkgreen/typ/qrg.gif</filename>
+		<filename>images/darkgreen/typ/sticky.gif</filename>
+		<filename>images/darkgreen/typ/tips.gif</filename>
+		<filename>images/darkgreen/ybuttons.gif</filename>
+		<filename>images/darkgreen/yjsg2_inset.gif</filename>
+		<filename>images/darkorange/bodyli.gif</filename>
+		<filename>images/darkorange/bodyli_rtl.gif</filename>
+		<filename>images/darkorange/bot_sep.gif</filename>
+		<filename>images/darkorange/font_decrease.gif</filename>
+		<filename>images/darkorange/font_increase.gif</filename>
+		<filename>images/darkorange/footer_inset.gif</filename>
+		<filename>images/darkorange/k2rss.gif</filename>
+		<filename>images/darkorange/li_bot_a.gif</filename>
+		<filename>images/darkorange/loading.gif</filename>
+		<filename>images/darkorange/loading2.gif</filename>
+		<filename>images/darkorange/logo.png</filename>
+		<filename>images/darkorange/mainlevel.gif</filename>
+		<filename>images/darkorange/nav_bg.png</filename>
+		<filename>images/darkorange/readb.gif</filename>
+		<filename>images/darkorange/readm_arrow.jpg</filename>
+		<filename>images/darkorange/readon_ll.gif</filename>
+		<filename>images/darkorange/readon_rl.gif</filename>
+		<filename>images/darkorange/topmenu/active_l.png</filename>
+		<filename>images/darkorange/topmenu/active_r.png</filename>
+		<filename>images/darkorange/topmenu/arrow_right.gif</filename>
+		<filename>images/darkorange/topmenu/hover_l.png</filename>
+		<filename>images/darkorange/topmenu/hover_r.png</filename>
+		<filename>images/darkorange/topmenu/normal_l.png</filename>
+		<filename>images/darkorange/topmenu/normal_r.png</filename>
+		<filename>images/darkorange/typ/clip.gif</filename>
+		<filename>images/darkorange/typ/down.gif</filename>
+		<filename>images/darkorange/typ/error.gif</filename>
+		<filename>images/darkorange/typ/info.gif</filename>
+		<filename>images/darkorange/typ/pin.gif</filename>
+		<filename>images/darkorange/typ/qlg.gif</filename>
+		<filename>images/darkorange/typ/qrg.gif</filename>
+		<filename>images/darkorange/typ/sticky.gif</filename>
+		<filename>images/darkorange/typ/tips.gif</filename>
+		<filename>images/darkorange/ybuttons.gif</filename>
+		<filename>images/darkorange/yjsg2_inset.gif</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/li_white.png</filename>
+		<filename>images/li_white_rtl.png</filename>
+		<filename>images/loader.gif</filename>
+		<filename>images/logotm.jpg</filename>
+		<filename>images/orange/bodyli.gif</filename>
+		<filename>images/orange/bodyli_rtl.gif</filename>
+		<filename>images/orange/bot_sep.gif</filename>
+		<filename>images/orange/footer_inset.gif</filename>
+		<filename>images/orange/li_bot_a.gif</filename>
+		<filename>images/orange/logo.png</filename>
+		<filename>images/orange/mainlevel.gif</filename>
+		<filename>images/orange/readb.gif</filename>
+		<filename>images/orange/readm_arrow.jpg</filename>
+		<filename>images/orange/readon_ll.gif</filename>
+		<filename>images/orange/readon_rl.gif</filename>
+		<filename>images/orange/topmenu/active_l.png</filename>
+		<filename>images/orange/topmenu/active_r.png</filename>
+		<filename>images/orange/topmenu/arrow_right.gif</filename>
+		<filename>images/orange/topmenu/hover_l.png</filename>
+		<filename>images/orange/topmenu/hover_r.png</filename>
+		<filename>images/orange/topmenu/normal_l.png</filename>
+		<filename>images/orange/topmenu/normal_r.png</filename>
+		<filename>images/orange/ybuttons.gif</filename>
+		<filename>images/orange/yjsg2_inset.gif</filename>
+		<filename>images/param_titles.gif</filename>
+		<filename>images/param_titles_l.gif</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/printButton.png</filename>
+		<filename>images/shadow_bottom.png</filename>
+		<filename>images/shadow_top.png</filename>
+		<filename>images/spinner.gif</filename>
+		<filename>images/trans.png</filename>
+		<filename>images/typ/clip.gif</filename>
+		<filename>images/typ/down.gif</filename>
+		<filename>images/typ/error.gif</filename>
+		<filename>images/typ/info.gif</filename>
+		<filename>images/typ/pin.gif</filename>
+		<filename>images/typ/qlg.gif</filename>
+		<filename>images/typ/qrg.gif</filename>
+		<filename>images/typ/star.gif</filename>
+		<filename>images/typ/star.png</filename>
+		<filename>images/typ/sticky.gif</filename>
+		<filename>images/typ/tips.gif</filename>
+		<filename>images/typ/video.gif</filename>
+		<filename>images/typ/video.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/blue.css</filename>
+		<filename>css/bordo.css</filename>
+		<filename>css/brown.css</filename>
+		<filename>css/darkblue.css</filename>
+		<filename>css/darkgreen.css</filename>
+		<filename>css/darkorange.css</filename>
+		<filename>css/editor.css</filename>
+		<filename>css/layout.css</filename>
+		<filename>css/menus.css</filename>
+		<filename>css/nocompress/blue.css</filename>
+		<filename>css/nocompress/bordo.css</filename>
+		<filename>css/nocompress/brown.css</filename>
+		<filename>css/nocompress/darkblue.css</filename>
+		<filename>css/nocompress/darkgreen.css</filename>
+		<filename>css/nocompress/darkorange.css</filename>
+		<filename>css/nocompress/editor.css</filename>
+		<filename>css/nocompress/layout.css</filename>
+		<filename>css/nocompress/menus.css</filename>
+		<filename>css/nocompress/orange.css</filename>
+		<filename>css/nocompress/template.css</filename>
+		<filename>css/nocompress/template_rtl.css</filename>
+		<filename>css/nocompress/typo.css</filename>
+		<filename>css/orange.css</filename>
+		<filename>css/template.css</filename>
+		<filename>css/template_rtl.css</filename>
+		<filename>css/typo.css</filename>
+		<filename>css/yjsg_admin.css</filename>
+	</css>
+  <params addpath="/templates/youmomentum/elements">
+    <param name="" type="yjsgparamtitle" default="File Handling Settings" label="" description="File Handling Settings" />
+    <param name="compress" type="radio" default="0" label="Server Side Compression" description="Activate Server Side Compression for faster site load">
+      <option value="1">Enable</option>
+      <option value="0">Disable</option>
+    </param>
+    <param name="ie6notice" type="radio" default="0" label="Enable IE6 Notice" description="Advise visitors to change browser. Visible for IE6 visitors only">
+      <option value="1">Enable</option>
+      <option value="0">Disable</option>
+    </param>
+    <param name="nonscript" type="radio" default="0" label="Enable nonscript Notice" description="Advise visitors to activate javascript. Visible for visitors who have javascript disabled">
+      <option value="1">Enable</option>
+      <option value="0">Disable</option>
+    </param>
+    <param name="" type="yjsgparamtitle" default="Top Menu Settings" label="" description="" />
+    <param name="menuName" type="mos_menu" default="mainmenu" label="Default Top Menu" description="Can be any Joomla menu" />
+    <param name="menustyle" type="list" default="2" label="Default Menu Style" description="Change Default Menu style">
+      <option value="dropdown">Dropdown Menu</option>
+      <option value="sdropdown">SMooth Dropdown Menu</option>
+      <option value="dropline">Dropline Menu</option>
+      <option value="sdropline">SMooth Dropline Menu</option>
+      <option value="split">Split Menu</option>
+    </param>
+    <param name="" type="yjsgparamtitle" default="Color Settings" label="" description="" />
+    <param name="defaultcolor" type="list" default="orange" label="Default color" description="Change Default Color">
+      <option value="bordo">Bordo</option>
+	  <option value="blue">Blue</option>
+      <option value="brown">Brown</option>
+      <option value="orange">Orange</option>
+	  <option value="darkorange">Darkbg and Orange</option>
+	  <option value="darkgreen">Darkbg and Green</option>
+	  <option value="darkblue">Darkbg and Blue</option>
+    </param>
+    <param name="" type="yjsgparamtitle" default="Font Size" label="" description="Set Default Font Size" />
+    <param name="fontsize" type="radio" default="medium" label="Default Font Size" description="Change Default Font Size">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </param>
+	    <param name="" type="yjsgparamtitle" default="Text Direction Settings" label="" description="" />
+    <param name="text_direction" type="list" default="2" label="Text Direction" description="RTL or LTR">
+      <option value="1">RTL</option>
+      <option value="2">LTR</option>
+     
+    </param>
+    <param name="" type="yjsgparamtitle" default="Site Layout Settings" label="" description="Site Layout Settings" />
+    <param name="css_width" type="text" default="1000px" label="Default Site Width" description="Change Default Site Width" />
+    <param name="logo_width" type="text" default="220px" label="Logo Width" description="Logo Width" />
+    <param name="top_menu_width" type="text" default="780px" label="Top Menu Width" description="Site width minus logo width or less" />
+    <param name="site_layout" type="list" default="2" label="Default Layout" description="Default Layout">
+      <option value="1">Left-Mainbody-Right</option>
+      <option value="2">Mainbody-Left-Right</option>
+      <option value="3">Left-Right-Mainbody</option>
+    </param>
+    <param name="" type="yjsgparamtitle" default="Main Columns width settings" label="Main Columns width settings" description="Main Columns width settings" />
+    <param name="widthdefined" type="list" default="1" label="Main Columns width defined in" description="Choose pixels or percentage. Note: If pixels ,sum of all 3 columns should not be grater than Default site Width setting above. If percentage, the sum of all 3 columns should not be grater than 100%" >
+      <option value="%">Percentage</option>
+      <option value="px">Pixels</option>
+    </param>
+    <param name="leftcolumn" type="text" default="22.5" label="Left column" description="Define width of your left column block. Do not enter pixels or percentage value here. It is defined in Main Columns width defined in setting above" />
+    <param name="rightcolumn" type="text" default="22.5" label="Right column" description="Define width of your right column block. Do not enter pixels or percentage value here. It is defined in Main Columns width defined in setting above" />
+    <param name="maincolumn" type="text" default="55" label="Mainbody column" description="Define width of your mainbody column block. Do not enter pixels or percentage value here. It is defined in Main Columns width defined in setting above" />
+    <param name="" type="yjsgparamtitle" default="Main Columns width settings for specific Itemid"  label="Main Columns width settings for  specific Itemid" description="Use this option if you like to change the main columns layout width on specific menu item only." />
+    <param name="define_itemid" type="yjsgmenuitems" default="0" label="Select Menu Item" />
+    <param name="widthdefined_itmid" type="list" default="1" label="Main Columns width defined in" description="Choose pixels or percentage. Note: If pixels ,sum of all 3 columns should not be grater than Default site Width setting above. If percentage, the sum of all 3 columns should not be grater than 100%" >
+      <option value="%">Percentage</option>
+      <option value="px">Pixels</option>
+    </param>
+    <param name="leftcolumn_itmid" type="text" default="22.5" label="Left column" description="Define width of your left column block. Note again that this is for specific itemid only!" />
+    <param name="rightcolumn_itmid" type="text" default="22.5" label="Right column" description="Define width of your right column block. Note again that this is for specific itemid only!" />
+    <param name="maincolumn_itmid" type="text" default="50" label="Mainbody column" description="Define width of your mid column block. Note again that this is for specific itemid only!" />
+    <param name="" type="yjsgparamtitle" default="SEO Settings" label="" description="" />
+    <param name="seo" type="text" default="Joomla 1.5 Template By Youjoomla.com" label="Enter your site description " size="50" description="This is SEO part:  Enter your site description here" />
+    <param name="tags" type="text" default="Joomla Templates by Youjoomla, Joomla Template Club, Youjoomla" size="80" label="Enter,your,site,keywords" description="This is SEO part:   Enter,your,site,keywords,here" />
+  </params>
+</install>

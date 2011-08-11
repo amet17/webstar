@@ -1,0 +1,158 @@
+/*
+# ------------------------------------------------------------------------
+# JA Facebook Like for Joomla 1.5
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+# Author: JoomlArt.com
+# Websites: http://www.joomlart.com - http://www.joomlancers.com.
+# ------------------------------------------------------------------------
+*/
+table.admintable { 
+	width: 100%; 
+	border-collapse: collapse;
+	empty-cells: hide !important;
+	padding: 0px;
+	margin: 0px;
+}
+tr .block-head {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #097cb6;
+	position: relative;
+}
+
+tr.level1 td {
+	padding-bottom: 10px;
+	padding-top: 0px !important;
+}
+
+tr.level1 .block-head.open, tr.level1 .block-head.close {
+	background: url(../images/level1-block.gif) repeat-x center center !important;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	padding: 11px 0px;
+}
+
+ tr.level1 .block-head a.toggle-btn {
+	height: 17px;
+	padding: 0px;
+	width: 17px;
+	text-transform: none;
+	top: 9px;
+	display: block;
+	text-indent: 0px;
+	text-decoration: none;
+	text-indent: -2000em;
+}
+
+tr.level1 .block-head a.open {
+	background: url(../images/open-all.png) no-repeat left center !important;
+	right: 34px;
+}
+
+tr.level1 .block-head a.close{
+	background: url(../images/close-all.png) no-repeat left center !important;
+}
+
+.block-head, .paramlist_value .block-head {
+	padding: 7px 0px;	
+}
+
+.block-head.close, .paramlist_value .block-head.close {
+	background: url(../images/level2-block.gif) repeat-x center center;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	margin: 0;
+}
+
+.block-head.open, .paramlist_value .block-head.open {
+	background: url(../images/level2-close.gif) repeat-x center center;
+	border-top: solid 1px #b5dfef;
+	border-bottom: solid 1px #b5dfef;
+}
+
+.block-setting, .paramlist_value .block-setting {
+	background: url(../images/arrow-blue.png) no-repeat 20px center;
+	border-left: none;
+	padding: 4px 0px 4px 28px;
+	color: #278cd4;
+}
+.paramlist_key, 
+.paramlist_value {
+	background:none repeat scroll 0 0 #FFFFFF !important;
+	border-bottom:1px solid #DDDDDD !important;
+	border-right:1px solid #DDDDDD !important;
+	padding: 5px !important;
+}
+
+tr.disabled:hover td {
+	background: #fcfce7 !important;
+}
+
+.first {
+	margin-top: -10px;
+}
+
+.block-des{
+	color: #999;
+	font-size: 11px;
+	margin: 0 -10px;
+	padding: 10px 5px 10px 35px;
+}
+
+.block-des p {
+	margin: 5px 0 0;
+}
+
+.group_title{width:100%; clear:both; padding:10px 0px 5px 0px;}
+.group_title span{font-weight:bold;}
+.group_item{float:left; overflow:hidden;}
+
+
+input, select, textarea {
+	font-size: 12px !important;
+	border: 1px solid #c0c0c0 !important;
+	padding: 2px !important;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#menu-pane input, select, textarea {
+	padding: 0 !important;
+	border: 1px solid silver !important;
+	font-size: 10px !important;
+}
+/* Toggle */
+a.toggle-btn {
+	width: 11px;
+	height: 7px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	text-indent: -2000em;
+	background: url(../images/toggle-btn.png) no-repeat center center;
+	cursor: pointer;
+}
+
+.open a.toggle-btn {
+	background-position: top left;
+}
+
+.open a.toggle-btn:hover {
+	background-position: top right;
+}
+
+.close a.toggle-btn {
+	background-position: bottom left;
+}
+
+.close a.toggle-btn:hover {
+	background-position: bottom right;
+}
+
+
+tr.disable-row{ display: none; }
+
+tr.enable-row { display: table-row; }
+div.jpane-slider{
+	height: auto !important;
+}

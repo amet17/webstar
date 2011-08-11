@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5" method="upgrade">
+	<name>Adsmanager</name>
+	<author>TomPAP (joomprod.com)</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>
+		Copyright (C) 2010-2011 JoomPROD. All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmaster@joomprod.com</authorEmail>
+	<authorUrl>www.joomprod.com</authorUrl>
+	<version>2.6.2.1</version>
+	<description>Classifield Ads</description>
+	<!-- Public front end files -->
+	<files folder="../frontend">
+		<filename>adsmanager.php</filename>
+		<filename>cron.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		<filename>metadata.xml</filename>
+		<folder>css</folder>
+		<folder>font</folder>
+		<folder>helpers</folder>
+		<folder>highslide</folder>
+		<folder>images</folder>
+		<folder>lytebox</folder>
+		<folder>views</folder>
+	</files>
+
+	<!-- Front end translation files -->
+
+	<languages folder="../translations/frontend">
+		<language tag="en-GB">en-GB.com_adsmanager.ini</language>
+		<language tag="fr-FR">fr-FR.com_adsmanager.ini</language>
+		<language tag="de-DE">de-DE.com_adsmanager.ini</language>
+		<language tag="ar-DZ">ar-DZ.com_adsmanager.ini</language>
+		<language tag="el-GR">el-GR.com_adsmanager.ini</language>
+		<language tag="es-ES">es-ES.com_adsmanager.ini</language>
+		<language tag="hu-HU">hu-HU.com_adsmanager.ini</language>
+		<language tag="nl-NL">nl-NL.com_adsmanager.ini</language>
+		<language tag="it-IT">it-IT.com_adsmanager.ini</language>
+		<language tag="bg-BG">bg-BG.com_adsmanager.ini</language>
+		<language tag="fa-IR">fa-IR.com_adsmanager.ini</language>
+		<language tag="pl-PL">pl-PL.com_adsmanager.ini</language>
+		<language tag="cs-CZ">pl-PL.com_adsmanager.ini</language>
+	</languages>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+
+	<!-- Administrator back-end section -->
+	<administration>
+		<!-- Administration menu -->
+		<menu link="option=com_adsmanager&amp;c=configuration" img="../components/com_adsmanager/images/adsmanager-16.png" >COM_ADSMANAGER</menu>
+		<submenu>
+			<menu link="option=com_adsmanager&amp;c=configuration" img="config">COM_ADSMANAGER_CONFIGURATION</menu>
+			<menu link="option=com_adsmanager&amp;c=fields" img="content">COM_ADSMANAGER_FIELDS</menu>
+			<menu link="option=com_adsmanager&amp;c=columns" img="stats">COM_ADSMANAGER_COLUMNS</menu>
+			<menu link="option=com_adsmanager&amp;c=positions" img="themes">COM_ADSMANAGER_AD_DISPLAY</menu>
+			<menu link="option=com_adsmanager&amp;c=categories" img="category">COM_ADSMANAGER_CATEGORIES</menu>
+			<menu link="option=com_adsmanager&amp;c=contents" img="article">COM_ADSMANAGER_CONTENTS</menu>
+			<menu link="option=com_adsmanager&amp;c=plugins" img="plugin" >COM_ADSMANAGER_PLUGINS</menu>
+			<menu link="option=com_adsmanager&amp;c=fieldimages" img="media">COM_ADSMANAGER_FIELD_IMAGES</menu>
+			<menu link="option=com_adsmanager&amp;c=tools" img="config">COM_ADSMANAGER_TOOLS</menu>
+		</submenu>
+
+		<!-- Back-end files -->
+		<files folder="../backend">
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>admin.adsmanager.php</filename>
+			<filename>install.adsmanager.php</filename>
+			<filename>adsmanager.xml</filename>
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>helpers</folder>
+			<folder>joomfish</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<!-- Back-end translation files -->
+		<languages folder="../translations/backend">
+			<language tag="en-GB">en-GB.com_adsmanager.ini</language>
+			<language tag="en-GB">en-GB.com_adsmanager.menu.ini</language>
+			<language tag="en-GB">en-GB.com_adsmanager.sys.ini</language>
+			<language tag="fr-FR">fr-FR.com_adsmanager.ini</language>
+			<language tag="fr-FR">fr-FR.com_adsmanager.menu.ini</language>
+			<language tag="fr-FR">fr-FR.com_adsmanager.sys.ini</language>
+			<language tag="de-DE">de-DE.com_adsmanager.ini</language>
+			<language tag="de-DE">de-DE.com_adsmanager.menu.ini</language>
+			<language tag="de-DE">en-GB.com_adsmanager.sys.ini</language>
+			<language tag="el-GR">el-GR.com_adsmanager.ini</language>
+			<language tag="el-GR">el-GR.com_adsmanager.menu.ini</language>
+			<language tag="el-GR">en-GB.com_adsmanager.sys.ini</language>
+			<language tag="hu-HU">hu-HU.com_adsmanager.ini</language>
+			<language tag="hu-HU">hu-HU.com_adsmanager.menu.ini</language>
+			<language tag="hu-HU">hu-HU.com_adsmanager.sys.ini</language>
+			<language tag="nl-NL">nl-NL.com_adsmanager.ini</language>
+			<language tag="nl-NL">nl-NL.com_adsmanager.menu.ini</language>
+			<language tag="nl-NL">en-GB.com_adsmanager.sys.ini</language>
+		</languages>
+
+	</administration>
+
+	<!-- Installation / uninstallation PHP scripts -->
+	<installfile>install.adsmanager.php</installfile>
+</install>

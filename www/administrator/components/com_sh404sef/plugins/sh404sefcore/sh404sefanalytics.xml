@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="sh404sefcore" method="upgrade">
+	<name>sh404sef - Analytics plugin</name>
+	<author>Yannick Gaultier</author>
+	<creationDate>2011-05-30</creationDate>
+	<copyright>2010 Yannick Gaultier</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@anything-digital.com	</authorEmail>
+	<authorUrl>dev.anything-digital.com</authorUrl>
+	<version>2.2.6.973</version>
+	<description>Create analytics custom tags
+	</description>
+	<files>
+		<filename plugin="sh404sefanalytics">sh404sefanalytics.php
+		</filename>
+	</files>
+	<params>
+		<param name="plugin_element" default="sh404sefanalytics" type="hidden" />
+		<param name="plugin_folder" default="sh404sefcore" type="hidden" />
+		<param name="plugin_event" default="onShInsertAnalyticsSnippet" type="hidden" />
+		<param name="plugin_functions" default="plgSh404sefAnalyticsCustomVars"	type="hidden" />
+	</params>
+</install>

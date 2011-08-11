@@ -1,0 +1,27 @@
+/**
+ * Stylesheet for template: Khepri
+ *
+ * @package     AdminBar Docker
+ * @version     1.4.7
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/* TOOLBARS */
+
+.abd_dock div#header-box,
+.abd_dock div#toolbar-box,
+.abd_dock div#submenu-box {
+	margin: 0;
+	border-bottom: 1px solid #d6d6d6;
+}
+.abd_dock div#header-box {
+	min-height: 26px;
+}
+.abd_dock div#toolbar-box,
+.abd_dock div#submenu-box {
+	padding: 10px;
+}

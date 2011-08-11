@@ -1,0 +1,6 @@
+/*
+ * http://share42.com
+ * Date: 09.04.2011
+ * (c) 2011, Dimox
+ */
+function share42(f,u,t){if(!u)u=location.href;if(!t)t=document.title;u=encodeURIComponent(u);t=encodeURIComponent(t);var s=new Array('"http://twitter.com/share?text='+t+'&url='+u+'" title="Добавить в Twitter"','"#" onclick="window.open(\'http://vkontakte.ru/share.php?url='+u+'\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=200, top=200, width=554, height=421, toolbar=0, status=0\');return false" title="Поделиться В Контакте"','"http://www.odnoklassniki.ru/dk?st.cmd=addShare&st._surl='+u+'&title='+t+'" title="Добавить в Одноклассники"','"http://www.facebook.com/sharer.php?u='+u+'&t='+t+'" title="Поделиться в Facebook"','"http://www.livejournal.com/update.bml?event='+u+'&subject='+t+'" title="Опубликовать в LiveJournal"','"http://my.ya.ru/posts_add_link.xml?URL='+u+'&title='+t+'" title="Поделиться в Я.ру"','"http://www.blogger.com/blog_this.pyra?t&u='+u+'&n='+t+'" title="Опубликовать в Blogger.com"','"http://connect.mail.ru/share?url='+u+'&title='+t+'" title="Поделиться в Моем Мире@Mail.Ru"');for(i=0;i<s.length;i++)document.write('<a rel="nofollow" style="display:inline-block;width:16px;height:16px;margin:0 7px 0 0;background:url('+f+'icons.png) -'+16*i+'px 0" href='+s[i]+' target="_blank"></a>')}

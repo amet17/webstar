@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ - name : full extension name
+ - id : name used for element ids and links (default: lowercase name with only a-z and '-')
+ - alias : name used in package folders (default: id)
+-->
+<extensions>
+	<extension name="NONUMBER_EXTENSION_MANAGER" id="nonumbermanager" type="com" />
+	<extension name="ADD_TO_MENU" type="mod" />
+	<extension name="ADMINBAR_DOCKER" type="plg_system" />
+	<extension name="ADVANCED_MODULE_MANAGER" alias="advancedmodules" type="com,plg_system" />
+	<extension name="ARTICLES_ANYWHERE" type="plg_system,plg_editors-xtd" />
+	<extension name="BETTER_PREVIEW" type="mod,plg_system" />
+	<extension name="CACHE_CLEANER" type="mod,plg_system" />
+	<extension name="CDN_FOR_JOOMLA" type="plg_system" />
+	<extension name="CONTENT_TEMPLATER" type="com,plg_system,plg_editors-xtd" />
+	<extension name="CUSTOMENU" type="mod" />
+	<extension name="DB_REPLACER" type="com" />
+	<extension name="MODALIZER" type="plg_system" />
+	<extension name="MODULES_ANYWHERE" type="plg_system,plg_editors-xtd" />
+	<extension name="REREPLACER" type="com,plg_system" />
+	<extension name="SLIDER" type="plg_system,plg_editors-xtd" />
+	<extension name="SNIPPETS" type="com,plg_system,plg_editors-xtd" />
+	<extension name="SOURCERER" type="plg_system,plg_editors-xtd" />
+	<extension name="TABBER" type="plg_system,plg_editors-xtd" />
+	<extension name="TIMED_STYLES" type="plg_system" />
+	<extension name="TOOLTIPS" type="plg_system,plg_editors-xtd" />
+	<extension name="WHAT-NOTHING" type="plg_system" />
+</extensions>

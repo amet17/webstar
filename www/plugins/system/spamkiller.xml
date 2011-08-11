@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - Spam killer</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2010 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0</version>
+	<description>This system plugin is used to detect and unpublish kunena forum post if spam detected</description>
+	<files>		
+		<filename plugin="spamkiller">spamkiller.php</filename>		
+		<folder>spamkiller</folder>
+	</files>
+	<params>
+	</params>
+</install>

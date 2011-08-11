@@ -1,0 +1,102 @@
+/**
+ * NoNumber! Extension Manager Admin CSS
+ *
+ * @package     NoNumber! Extension Manager
+ * @version     2.4.7
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+table.adminlist.nonumbermanager tbody tr td {
+	 height: 36px;
+}
+table.nonumbermanager img {
+	 vertical-align: sub;
+}
+table.hidenotinstalled tr.notinstalled {
+	display: none;
+}
+
+.icon-48-nonumbermanager {
+	background: transparent url(../images/nonumber.png) no-repeat 10px 9px !important;
+	padding-left: 146px !important; /* width + 20 */
+}
+
+div.button2-left.nonumbermanager_button {
+	margin-left: 0;
+	margin-right: 3px;
+}
+
+div.button2-left.nonumbermanager_button div.blank a {
+	background: transparent url(../images/button_install.png) 0% 3px no-repeat;
+	padding-left: 19px !important;
+	margin-left: 3px;
+	white-space: nowrap;
+}
+
+div.button2-left.nonumbermanager_button div.nonumbermanager_checkcheckdata a {
+	background-image: url(../images/refresh.png);
+}
+div.button2-left.nonumbermanager_button div.nonumbermanager_install a,
+div.button2-left.nonumbermanager_button div.nonumbermanager_update a {
+	min-width: 85px;
+}
+	div.button2-left.nonumbermanager_button div.nonumbermanager_install a {
+		background-image: url(../images/button_install.png);
+	}
+	div.button2-left.nonumbermanager_button div.nonumbermanager_update a {
+		background-image: url(../images/button_update.png);
+	}
+div.button2-left.nonumbermanager_button div.nonumbermanager_installselected a,
+div.button2-left.nonumbermanager_button div.nonumbermanager_updateall a,
+div.button2-left.nonumbermanager_button div.nonumbermanager_installall a {
+	background-image: url(../images/button_install.png);
+}
+	div.button2-left.nonumbermanager_button div.nonumbermanager_updateall a {
+		background-image: url(../images/button_update.png);
+	}
+
+div.button2-left.nonumbermanager_ghosted {
+	filter: alpha(opacity=40);
+	-moz-opacity: 0.4;
+	-khtml-opacity: 0.4;
+	opacity: 0.4;
+}
+	div.button2-left.nonumbermanager_ghosted a,
+	div.button2-left.nonumbermanager_ghosted a:hover {
+		cursor: default;
+		color: #333333
+	}
+
+ul.nonumbermanager_list_langs {
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+}
+
+/* Tooltips */
+.changlog-tip {
+	max-width: none !important;
+}
+.changlog-tip .tool-text {
+	font-family: monospace;
+}
+
+/* AP template */
+#ap-wrapper .icon-48-nonumbermanager {
+	background: transparent url(../images/nonumber.png) no-repeat 10px 13px !important;
+	padding-left: 146px; /* width + 20 */
+	font-size: 22px ;
+	color: #000000;
+}
+
+/* APLite template */
+.ap-main .icon-48-nonumbermanager {
+	background: #FFFFFF url(../images/nonumber.png) no-repeat -27px -7px !important;
+	padding-left: 106px !important; /* width - 20 */
+	padding-right: 5px !important;
+	color: #000000 !important;
+}

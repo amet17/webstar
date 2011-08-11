@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
+<install version="1.5.0" type="plugin" group="system">
+	<name>System - AdminBar Docker</name>
+	<description>PLG_SYSTEM_ADMINBARDOCKER_DESC</description>
+	<version>1.4.7</version>
+	<creationDate>June 2011</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="adminbardocker">adminbardocker.php</filename>
+		<folder>adminbardocker</folder>
+	</files>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/system/nonumberelements/elements">
+		<param name="@loadlanguage" type="loadlanguage" extension="plg_system_adminbardocker" />
+		<param name="@license" type="license" extension="ADMINBAR_DOCKER" />
+		<param name="@version" type="version" extension="ADMINBAR_DOCKER" xml="/plugins/system/adminbardocker.xml" />
+		<param name="@header" type="header"
+			label="ADMINBAR_DOCKER"
+			description="ADMINBAR_DOCKER_DESC"
+			xml="/plugins/system/adminbardocker.xml"
+			image="/plugins/system/adminbardocker/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/adminbardocker"
+			help_url="http://www.nonumber.nl/adminbardocker" />
+
+		<param name="dock_state" type="radio" default="docked" label="ABD_DEFAULT_STATE" description="ABD_DEFAULT_STATE_DESC">
+			<option value="docked">ABD_DOCK</option>
+			<option value="undocked">ABD_UNDOCK</option>
+		</param>
+		<param name="dock_pos" type="radio" default="top" label="ABD_DEFAULT_POSITION" description="ABD_DEFAULT_POSITION_DESC">
+			<option value="top">ABD_UNDOCK_TO_TOP</option>
+			<option value="bottom">ABD_UNDOCK_TO_BOTTOM</option>
+		</param>
+		<param name="autohide" type="radio" default="0" label="ABD_DEFAULT_AUTO_HIDE" description="ABD_DEFAULT_AUTO_HIDE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showonpopups" type="radio" default="0" label="ABD_SHOW_ON_ADMIN_POPUPS" description="ABD_SHOW_ON_ADMIN_POPUPS_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">ABD_YES_BUT_DOCKED</option>
+		</param>
+		<param name="hidetopbar" type="radio" default="0" label="ABD_HIDE_TOP_BAR" description="ABD_HIDE_TOP_BAR_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="icon_set" type="radioimages" directory="plugins/system/adminbardocker/images" filter="iconset_[0-9]{2}\.png" rowcount="1" hide_none="1" hide_default="1" default="iconset_11.png" label="ABD_ICON_SET" description="ABD_ICON_SET_DESC" />
+	</params>
+</install>

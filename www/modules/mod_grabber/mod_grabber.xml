@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+        <name>Content Grabber</name>
+        <author>Nikonor</author>
+        <creationDate>30.01.2009</creationDate>
+        <copyright>(C) 2007-2010 Nikonor. All rights reserved.</copyright>
+        <license>GPL 2.0</license>
+        <authorEmail>web@11group.ru</authorEmail>
+        <authorUrl>www.elevengroup.ru</authorUrl>
+        <version>1.4.5</version>
+        <description>DESC</description>
+    <files>
+        <filename module="mod_grabber">mod_grabber.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>templates/lenta.grab</filename>
+		<filename>templates/rbcdaily.grab</filename>
+		<filename>templates/index.html</filename>
+		<filename>content/index.html</filename>
+		<filename>content/mod_grabber.html</filename>
+    </files>
+	<languages>
+		<language tag="ru-RU">ru-RU.mod_grabber.ini</language>
+		<language tag="en-GB">en-GB.mod_grabber.ini</language>
+	</languages>
+	<params>
+		<param name="url" type="text" default="" label="URL" description="URL DESC" />
+		<param name="start_tag" type="text" default="" label="START TAG" description="START TAG DESC" />
+		<param name="end_tag" type="text" default="" label="END TAG" description="END TAG DESC" />
+		<param name="show_tags" type="list" default="1" label="USE TAGS" description="USE TAGS DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="starttext" type="textarea" cols="20" rows="5" default="" label="HTML BEFORE" description="HTML BEFORE DESC" />
+		<param name="endtext" type="textarea" cols="20" rows="5" default="" label="HTML AFTER" description="HTML AFTER DESC" />
+	</params>
+	<params group="advanced">
+		<param type="spacer" default="CORRECT ENCODING" label="" description="" />
+		<param name="fromcharset" type="text" cols="20" rows="5" default="" label="SOURCE ENCODING" description="SOURCE ENCODING DESC" />
+		<param name="tocharset" type="text" cols="20" rows="5" default="" label="YOUR SITE ENCODING" description="YOUR SITE ENCODING DESC" />
+		<param type="spacer" default="CORRECT LINKS" label="" description="" />
+		<param name="linkhref" type="text" default="" label="HREF URL" description="HREF URL DESC" />
+		<param name="linksrc" type="text" default="" label="SRC URL" description="SRC URL DESC" />		
+		<param name="oldlinksrc" type="list" default="SRC2" label="SRC" description="SRC DESC">
+			<option value="SRC2">SRC2</option>
+			<option value="SRC1">SRC1</option>
+			<option value="SRC0">SRC0</option>
+		</param>		
+		<param name="oldlinkhref" type="list" default="HREF2" label="HREF" description="HREF DESC">
+			<option value="HREF2">HREF2</option>
+			<option value="HREF1">HREF1</option>
+			<option value="HREF0">HREF0</option>
+		</param>
+		<param type="spacer" default="REG EXP" label="" description="" />
+		<param name="regexp" type="text" default="#$start(.*?)$end#s" label="OWN REG EXP" description="OWN REG EXP DESC" />
+		<param type="spacer" default="ATTR LINKS" label="" description="" />
+		<param name="atr" type="text" default="" label="LINK ATR" description="LINK ATR DESC" />
+	</params>
+	<params group="other">
+		<param name="moduleclass_sfx" type="text" default="" label="SUFF" description="PARAMMODULECLASSSUFFIX" />
+		<param type="spacer" default="TEMPLATES" label="" description="" />
+		<param name="template" type="list" default="0" label="USE TEMPLATES" description="USE TEMPLATES DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="template_name" default="" type="filelist" hide_default="1" hide_none="1" directory="/modules/mod_grabber/templates" label="TEMPLATE" filter ="\.grab$" description="TEMPLATE DESC" />
+		<param type="spacer" default="GRAB CACHE" label="" description="" />
+		<param name="usecache" type="list" default="1" label="USE GRAB CACHE" description="USE GRAB CACHE DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="howlong" type="text" default="1" label="GRAB CACHE TIME" description="GRAB CACHE TIME DESC" />
+		<param type="spacer" default="SYS CACHE" label="" description="" />
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+		<param type="spacer" default="MESSAGE" label="" description="" />
+		<param name="mestype" type="list" default="3" label="MESSAGE TYPE" description="MESSAGE TYPE DESC">
+			<option value="1">MESSAGE TYPE ONE</option>
+			<option value="2">MESSAGE TYPE TWO</option>
+			<option value="3">MESSAGE TYPE THREE</option>
+		</param>
+	</params>
+</install>

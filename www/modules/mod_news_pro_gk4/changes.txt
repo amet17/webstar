@@ -1,0 +1,8 @@
+News Show Pro GK4 v.3.0.0
+
+- added image cropping
+- portal modes
+- added option to disabled showing out of stock products
+- improved cache of the VirtueMart thumbnails
+- added support for JComments comments count in K2 JComments plugin
+- fixed problem with LIMIT in SQL queries

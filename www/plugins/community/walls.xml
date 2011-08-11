@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community" method="upgrade">
+	<name>Walls</name>
+	<author>JomSocial Team</author>
+	<creationDate>25/10/2010</creationDate>
+	<copyright>Copyright 2008 - 2010 by Slashes &amp; Dots Sdn Bhd. Все права защищены</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<version>2.0.0</version>
+	<isapplication>true</isapplication>
+	<description>
+		Стены для  JomSocial. Плагин обеспечивает возможность добавления стены на страницу профиля пользователя.
+	</description>
+	<languages>
+		<language tag="en-GB">en-GB.plg_walls.ini</language>
+		<language tag="ru-RU">ru-RU.plg_walls.ini</language>
+	</languages>
+	<files>
+		<file plugin="walls">walls.php</file>
+		<folder>walls</folder>
+	</files>
+	
+	<menuitem>
+		<menu label="Inbox" position="toolbar">
+			<link label="Inbox">task=inbox</link>
+			<link label="Compose">task=compose</link>
+		</menu>
+	</menuitem>
+	
+	<params>
+		<param name="coreapp" type="list" default="0" label="Системное приложение" description="Укажите вариант установки плагина к профиле пользователя. При выборе 'Системное' приложение будет установлено автоматически">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="cache" type="list" default="1" label="Кеширование" description="Укажите необходимость кеширование приложения">
+			<option value="1">Глобальные</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="position" type="list" default="content" label="Позиция" description="Позиция для отображения по умолчанию">
+			<option value="content">Main  content</option>
+			<option value="sidebar-top">Sidebar top</option>
+			<option value="sidebar-bottom">Sidebar bottom</option>
+		</param>
+		<param name="charlimit" type="text" default="0" label="Ограничение" description="Ограничение на кол-во символов в сообщении на стене. (Укажите 0 для снятия ограничений)" />
+	</params>
+</install>

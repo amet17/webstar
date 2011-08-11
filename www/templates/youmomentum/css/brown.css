@@ -1,0 +1,277 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Copyright (C) Since 2006 Youjoomla LLC. All Rights Reserved.       ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- THIS IS NOT FREE SOFTWARE ---------------- #      ||
+|| # http://www.youjoomla.com | http://www.youjoomla.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+body{color:#555; background-color:#FFF}
+body#color{background:#eee url(../images/bg/gray.jpg) no-repeat center top}
+body#color2{background:#eee url(../images/bg/gray2.jpg) no-repeat center top}
+#centerbottom{}
+#logo{background:url(../images/brown/logo.png) no-repeat 0px 0px}
+#yjsg2{background:#817469 url(../images/brown/yjsg2_inset.gif) repeat-x left top}
+#yjsg2 .yjsquare{color:#fff}
+#footer{background:#73685f url(../images/brown/footer_inset.gif) repeat-x left top; color:#fff}
+#footer a:link, 
+#footer a:visited{color:#171717}
+#footer a:hover, 
+#footer a:focus{color:#fff}
+#cp a:link, 
+#cp a:visited{color:#fff}
+#cp a:hover, 
+#cp a:focus{color:#171717}
+a#yjlink:link, 
+a#topscroll:link, 
+a#yjlink:visited, 
+a#topscroll:visited{color:#171717}
+a#yjlink:hover, 
+a#yjlink:focus, 
+a#topscroll:hover, 
+a#topscroll:focus{color:#fff}
+
+div.itemCommentsForm form input.button{color:#988d84}
+
+.search{}
+.search .inputbox{}
+
+#modlgn_passwd, #modlgn_username{color:#988d84; border:1px solid #d7d7d6}
+#modlgn_passwd{background:#fff}
+#modlgn_username{background:#fff}
+#mod_login_remember{border:none; padding:0!important}
+
+a:link, a:visited{text-decoration:none; color:#988d84}
+a:focus, a:hover{color:#171717; text-decoration:none}
+h1, h3, h4, 
+h5, h6, h2{color:#988d84}
+.small, .createdate, .modifydate, .mosimage_caption, .createby{color:#202020; font:bold 10px Tahoma,Verdana,"Lucida Sans"; text-shadow:1px 1px #fff}
+.componentheading, 
+.contentheading, 
+.contentheading a:link, 
+.contentheading a:visited, 
+.contentheading a:link, 
+.contentheading a:visited{color:#988d84; text-shadow:1px 1px #fff}
+#pathway{color:#202020; font:bold 11px Tahoma,Verdana,"Lucida Sans"; text-shadow:1px 1px #fff}
+.toclink{border:1px solid #d7d7d6}
+fieldset{border:1px solid #d7d7d6}
+.yjsquare_in fieldset{border:none}
+.inputbox, 
+input#email{background:#FFF; border:1px solid #d7d7d6}
+.inputbox:hover, .inputbox:focus, 
+input#email:hover{background:#fafafa; border:1px solid #988d84}
+
+.button{color:#fff}
+
+.button, .validate{background:url(../images/brown/ybuttons.gif) repeat-x left top; border-top:none; border-bottom:1px solid #c5c5c5; border-right:1px solid #c5c5c5; border-left:1px solid #fff; color:#988d84; text-transform:lowercase; text-shadow:1px 1px #fff}
+a.button:link, 
+a.button:visited, 
+a.button:focus{color:#171717; padding:3px}
+.back_button a:hover, .back_button a:active{color:#000; text-decoration:none}
+a.pagenav, 
+.pagenav_prev a, 
+.pagenav_next a, 
+.pagenavbar a, .back_button a{background:#988d84; border:1px solid #988d84; color:#fff}
+a.readon:link, a.readon:visited{background:url(../images/brown/readon_ll.gif) no-repeat left center; color:#202020; text-transform:uppercase; font-size:10px; font-weight:bold; text-shadow:1px 1px #fff}
+
+.readon span{background:url(../images/brown/readon_rl.gif) no-repeat right center}
+a.readon:hover, .pagenavbar a:hover{color:#988d84}
+
+#midblock a.readon:link, 
+#midblock a.readon:visited{margin:0 0 0 0; color:#988d84; text-transform:lowercase; background:url(../images/brown/readm_arrow.jpg) no-repeat left top}
+#midblock a.readon:hover, 
+#midblock .pagenavbar a:hover{color:#202020; background:url(../images/brown/readm_arrow.jpg) no-repeat left bottom}
+#midblock .readon span{background:none; padding:0}
+
+.yjsquare h3{color:#988d84; text-shadow:1px 1px #fff}
+.yjsquare h3 span{color:#988d84}
+.yjsquare{color:#555}
+.yjsquare_yj1{border-top:none; border-bottom:1px solid #d7d7d6; border-right:1px solid #d7d7d6; border-left:1px solid #fff; background:#f9f8f8}
+.yjsquare_yj2{border-top:none; border-bottom:1px solid #d7d7d6; border-right:1px solid #d7d7d6; border-left:1px solid #fff; background:#202020; color:#efefef}
+.yjsquare_yj2 h3, 
+.yjsquare_yj2 h3 span, 
+#yjsg0 .yjsquare h3, 
+#yjsg0 .yjsquare h3 span{color:#737373; text-shadow:none}
+#yjsg0 .yjsquare{color:#dcdcdc}
+.yjnewsflash{border-bottom:1px solid #737373}
+#yjsg0 a:hover, 
+#yjsg0 a:focus{color:#efefef}
+
+#horiznav ul li a{color:#988d84; background:url(../images/brown/topmenu/normal_l.png) no-repeat left center; text-shadow:1px 1px #fff}
+
+#horiznav ul li a:hover, 
+#horiznav ul li:hover a, 
+#horiznav ul li.sfHover a{color:#fff; background:url(../images/brown/topmenu/hover_l.png) no-repeat left center; text-shadow:1px 1px #72665b}
+#horiznav li#current a, 
+#horiznav li#current a:hover, 
+#horiznav li#current:hover a, 
+#horiznav li#current.sfHover a, 
+#horiznav li.active a{color:#fff; background:url(../images/brown/topmenu/active_l.png) no-repeat left center; text-shadow:1px 1px #72665b}
+#horiznav li#current, 
+#horiznav li#current:hover, 
+#horiznav li#current.sfHover, 
+#horiznav li.active{background:url(../images/brown/topmenu/active_r.png) no-repeat right center}
+
+#horiznav ul li:hover li a, 
+#horiznav ul li.sfHover li a, 
+#horiznav ul li#current:hover li a, 
+#horiznav ul li#current.sfHover li a, 
+#horiznav ul li:hover ul ul li a, 
+#horiznav ul ul li.active{color:#fff; background-image:none}
+#horiznav li:hover ul, 
+#horiznav li li:hover ul, 
+#horiznav li li li:hover ul, 
+#horiznav li li li li:hover ul, 
+#horiznav li.sfHover ul, 
+#horiznav li li.sfHover ul, 
+#horiznav li li li.sfHover ul, 
+#horiznav li li li li.sfHover ul, 
+#horiznav ul li:hover li a, 
+#horiznav ul li.sfHover li a, 
+#horiznav ul li:hover ul ul li a, 
+#horiznav ul li.sfHover ul ul li a{background-color:#988d84}
+#horiznav li ul li a:hover, 
+#horiznav li ul li ul li a:hover, 
+#horiznav li li:hover, 
+#horiznav ul li li.sfHover, 
+#horiznav li li.sfHover a, 
+#horiznav ul li li:hover a, 
+#horiznav ul li li:hover, 
+#horiznav ul li li.sfHover, 
+#horiznav ul li li#current a:hover, 
+#horiznav li.haschild ul li#current.sfHover, 
+#horiznav li.haschild ul li#current:hover, 
+#horiznav ul li.haschild li#current a:hover{background-color:#988d84; color:#202020; background-image:none}
+#horiznav ul li#current ul li a, 
+#horiznav ul li#current ul li, 
+#horiznav ul li#current ul li a:hover, 
+#horiznav ul li#current ul li.hover
+#horiznav ul li#current ul li.sfHover, 
+#horiznav ul li.haschild li#current a{color:#fff}
+#horiznav li li{border-bottom:1px solid #72665b}
+
+#horiznav li ul{border-right:none; border-left:none; border-bottom:none; border-top:1px solid #72665b}
+#horiznav li, #horiznav{font-weight:bold; background:none}
+#horiznav li{background:url(../images/brown/topmenu/normal_r.png) no-repeat right center}
+#horiznav ul li:hover, #horiznav ul li.sfHover{background:url(../images/brown/topmenu/hover_r.png) no-repeat right center}
+
+#horiznav ul li ul li.haschild a.child, 
+#horiznav ul li ul li a.child:hover{background:url(../images/brown/topmenu/arrow_right.gif) 95% 50% no-repeat}
+
+#horiznav ul li.active ul li a.child{background:url(../images/brown/topmenu/arrow_right.gif) 95% 50% no-repeat}
+
+#mainlevel li a, 
+.menu li a, 
+a.mainlevel{background:url(../images/brown/mainlevel.gif) no-repeat left top}
+#mainlevel li a:hover, 
+#mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, 
+a.mainlevel:hover, 
+a.mainlevel#active_menu, 
+#mainlevel li a:hover, 
+#mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, 
+.menu li a:hover, .menu li.active a{background:url(../images/brown/mainlevel.gif) no-repeat left bottom}
+a.sublevel{background:url(../images/brown/bodyli.gif) no-repeat 5px 9px}
+a.sublevel:hover{text-decoration:underline}
+#footmod a.mainlevel:hover, 
+#footmod a.mainlevel:active, 
+#footmod a.mainlevel:focus, 
+#mainlevel li a:hover, 
+#mainlevel a#active_menu:link, 
+#mainlevel a#active_menu:visited, 
+a.mainlevel#active_menu, 
+a.sublevel, a.sublevel:hover, 
+a.sublevel:active, a.sublevel:focus, 
+#active_menu, a.mainlevel:hover, 
+a.mainlevel:active, 
+a.mainlevel:focus, 
+ul li a:hover, 
+li.active a, 
+li.parent a{color:#171717}
+a.mainlevel, 
+#mainlevel li a{color:#988d84}
+
+.k2CategoriesListBlock ul li a{background:url(../images/brown/mainlevel.gif) no-repeat left top; color:#988d84}
+.k2CategoriesListBlock ul li a:hover{color:#988d84; background:url(../images/brown/mainlevel.gif) no-repeat left top}
+div.k2CategoriesListBlock ul li.activeCategory a{font-weight:normal; color:#171717; background:url(../images/brown/mainlevel.gif) no-repeat left bottom}
+div.k2CategoriesListBlock ul li.activeCategory ul.level1 a{font-weight:normal; color:#988d84; background:url(../images/brown/mainlevel.gif) no-repeat left top}
+div.k2CategoriesListBlock ul li.activeCategory ul.level1 a:hover{font-weight:normal; color:#171717; background:url(../images/brown/mainlevel.gif) no-repeat left bottom}
+div.k2CategoriesListBlock ul li.activeCategory a:hover{color:#171717}
+.yjsquare li.active ul li a, 
+a.sublevel#active_menu{color:#988d84}
+.yjsquare li.active ul li a:hover, 
+.yjsquare li.active ul li.active a{color:#686C6F; background:url(../images/brown/mainlevel.gif) no-repeat left top}
+body li{padding-left:15px; background:url(../images/brown/bodyli.gif) no-repeat 0px 6px; font-family:Verdana,Arial,Helvetica, sans-serif; font-size:11px; text-decoration:none}
+#footer{text-shadow:2px 2px #72665b}
+
+#yjsg2 .yjsquare h3, 
+#yjsg2 .yjsquare h3 span{color:#fff; text-shadow:2px 2px #72665b}
+#yjsg2 ul li{color:#fff; background:url(../images/li_white.png) no-repeat 0px 11px}
+#yjsg2 ul li a, 
+#yjsg2 ul li a:visited{color:#fff; background:url(../images/brown/li_bot_a.gif) no-repeat left bottom}
+#yjsg2 ul li a:hover, 
+#yjsg2 ul li a:focus{color:#202020}
+#bottomout, #topout{background:#fff}
+img.border{border:1px solid #e7e7e7; background:#fff}
+.dropcap, 
+.bignumber{color:#988d84}
+#yjsg2 .yjsgxhtml{background:url(../images/brown/bot_sep.gif) no-repeat right center}
+.readb{background:url(../images/brown/readb.gif) no-repeat left center}
+
+.userItemTitle, 
+.itemTitle, 
+.itemExtraFields h3, 
+.itemAuthorName, 
+.itemCommentsForm h3, 
+div.itemListCategory, 
+div.itemListCategory h2, 
+div.catItemHeader h3.catItemTitle, 
+div.subCategoryContainer h2, 
+div.userBlock, 
+div.itemHeader, 
+div.k2ItemsBlock ul li a.moduleItemTitle{text-shadow:1px 1px #fff}
+#yjsg0{background:#202020}
+
+table.pollstableborder tr.sectiontableentry0 td{border:none; background:#f3f2f2}
+table.pollstableborder tr.sectiontableentry1 td, 
+table.pollstableborder tr.sectiontableentry2 td{border:none}
+.sectiontableheader{border:1px solid #d4d4d4; background:#DEDEDE}
+.sectiontableentry1{background-color:#DEDEDE}
+tr.sectiontableentry0 td, tr.sectiontableentry1 td, tr.sectiontableentry2 td, 
+td.sectiontableentry0, td.sectiontableentry1, td.sectiontableentry2{border-bottom:1px solid #fff}
+tr.sectiontableentry0 td, td.sectiontableentry0, 
+tr.sectiontableentry2 td, td.sectiontableentry2{background-color:#f3f2f2}
+tr.sectiontableentry1 td, td.sectiontableentry1{background-color:#E9E9E9}
+tr.sectiontableentry0:hover td, tr.sectiontableentry1:hover td, 
+tr.sectiontableentry2:hover td{background-color:#EEE}
+
+/* K2 */
+.itemExtraFields h3{border-bottom:1px solid #E0E0E0}
+
+div.itemListCategory{background:#fafafa; border:1px solid #E0E0E0; color:#8c8b8b}
+ 
+div.subCategory{background:#fafafa; border:1px solid #E0E0E0; color:#8c8b8b}
+ 
+.even, .odd{border-bottom:1px solid #E0E0E0; border-top:1px solid #F6F6F1; background:#fafafa}
+
+div.itemAuthorBlock{background:#fafafa; border:1px solid #E0E0E0}
+span.userItemImage img, 
+span.itemImage img, 
+span.catItemImage img, 
+span.genericItemImage img{border:1px solid #E0E0E0; background:#fff}
+
+div.itemCommentsForm form input.button{background:#fff; border:1px solid #E0E0E0}
+div.userBlock{background:#fafafa; border:1px solid #E0E0E0}
+div.itemToolbar{background:#fff; border:1px solid #E0E0E0}
+div.itemHeader span.itemDateCreated{color:#171717}
+
+div.itemComments{background:#fafafa; border:1px solid #E0E0E0}
+div.itemComments ul.itemCommentsList li img{border:1px solid #E0E0E0}
+div.k2LatestCommentsBlock ul li img.lcAvatar{border:1px solid #E0E0E0}
+.k2LatestCommentsBlock ul li.even, 
+.k2LatestCommentsBlock ul li.odd{background:#fafafa; border:1px solid #E0E0E0}
+
+.k2ItemsBlock ul li{background:#fafafa; border:1px solid #E0E0E0}
+div.k2ItemsBlock ul li img.moduleItemAuthorAvatar{background:#fff; border:1px solid #fafafa}
+
+#bottomshelf_inwr .k2ItemsBlock .moduleItemTitle:hover{color:#fff}
+#bottomshelf_inwr .k2ItemsBlock .moduleItemIntrotext{}

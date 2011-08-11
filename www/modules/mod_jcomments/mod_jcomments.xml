@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" client="site" version="1.5.0" method="upgrade">
+	<name>JComments Latest</name>
+	<creationDate>10/09/2010</creationDate>
+	<author>smart</author>
+	<copyright>Copyright 2006-2009 Joomlatune.ru All rights reserved!</copyright>
+	<authorEmail>smart@joomlatune.ru</authorEmail>
+	<authorUrl>http://www.joomlatune.ru</authorUrl>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.5.6</version>
+	<description>Show latest comments or latest commented content items</description>
+	<files>
+		<filename module="mod_jcomments">mod_jcomments.php</filename> 
+		<filename>index.html</filename>
+		<filename>images/rss.gif</filename>
+	</files>
+	<params>
+		<param name="type" type="list" default="0" label="Module Mode" description="Allows you to control which type of latest items to display in the module">
+			<option value="1">Show latest comments</option>
+			<option value="2">Show latest commented content</option>
+			<option value="3">Show most commented content</option>
+			<option value="4">Show latest unpublished comments</option>
+			<option value="5">Show popular comments</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="mambots" type="radio" default="0" label="Enable Mambots" description="Enable JComments mambots processing">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="sectionid" type="mos_section" default="" label="Set section" description="Selects comments from a specific Section"/>
+		<param name="exclude_sectionid" type="textarea" cols="20" rows="5" default="" label="Exclude sections" description="Exclude comments from a specific Section or set of Section (to specify more than one Section, seperate with a comma , )." />
+		<param name="catid" type="mos_category" default="" label="Set category" description="Selects comments from a specific Category"/>
+		<param name="exclude_catid" type="textarea" cols="20" rows="5" default="" label="Exclude categories" description="Excludes comments from a specific Category or set of Categories (to specify more than one Category, seperate with a comma , )." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="object_group" type="text" default="com_content" label="Source" description="Component or Components to display comments from" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="count" type="text" default="5" label="Count" description="The number of items to display" />
+		<param name="length" type="text" size="20" default="50" label="Max. number of characters" description="The number of characters to display" />
+		<param name="showcomments" type="radio" default="0" label="Show comments count" description="Show number of comments next to each item">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="avatar" type="radio" default="0" label="Show avatar" description="Show user avatar in module. Require installed avatar plugin">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="avatar_size" type="text" default="32" label="Avatar Size" description="Width of avatar image" />
+		<param name="showsmiles" type="list" default="0" label="Show smiles" description="Select whether to show smiles as text or as images">
+			<option value="0">Text</option>
+			<option value="1">Images</option>
+			<option value="2">Strip smiles</option>
+		</param>
+		<param name="show_date" type="radio" default="0" label="Show comment date" description="Show comment date" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_author" type="list" default="0" label="Show author comment" description="Show author comment" >
+			<option value="0">No</option>
+			<option value="1">Show Name</option>
+			<option value="2">Show UserName</option>
+		</param>
+		<param name="show_object_title" type="radio" default="0" label="Show object title" description="Show title of commented object" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="limit_object_title" type="text" default="30" label="Limit chars for object title" description="Limit chars for object title" />		
+		<param name="show_comment_text" type="list" default="0" label="Comment text style" description="Select comment text style" >
+			<option value="0">Show as plain text</option>
+			<option value="1">Show as linked text</option>
+			<option value="2">Show as plain text with Readmore link</option>
+		</param>
+		<param name="label4more" type="text" default="More..." label="Label for readmore" description="Custom your readmore link text" />
+		<param name="label4author" type="text" default="By" label="Label for comment author" description="Custom label for author" />		
+		<param name="dateformat" type="text" default="%d.%m.%y %H:%M" label="Date format" description="Enter specific date format" />		
+		<param name="show_full_rss" type="list" default="0" label="Show full RSS" description="Show RSS feed for all site comments" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="label4rss" type="text" default="RSS" label="Alt for RSS" description="Set alternate text for RSS-icon" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	</params>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_jcomments.ini</language>
+		<language tag="ru-RU">ru-RU.mod_jcomments.ini</language>
+	</languages>
+</install>

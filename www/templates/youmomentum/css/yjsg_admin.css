@@ -1,0 +1,25 @@
+/**
+ * @package		YJSimple Grid Joomla! Template Framework Elements CSS
+ * @author      http://www.youjoomla.com
+ * @copyright	Copyright (c) Since 2006 Youjoomla LLC. All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+.yjsg_param_title{
+font-weight:bold;
+width:370px;
+font-size:10px;
+text-transform:uppercase;
+color:#991225;
+text-shadow:1px 1px #fff;
+line-height:27px;
+margin:0;
+height:27px;
+padding:0;
+background:url(../images/param_titles_l.gif) no-repeat left center;
+}
+.yjsg_param_title_l{
+background:url(../images/param_titles.gif) no-repeat right center;
+margin:0;
+height:27px;
+padding:0 15px;
+}

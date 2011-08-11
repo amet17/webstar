@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
+<install version="1.5.0" type="plugin" group="system">
+	<name>System - Advanced Module Manager</name>
+	<description>PLG_SYSTEM_ADVANCEDMODULES_DESC</description>
+	<version>1.19.0</version>
+	<creationDate>July 2011</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="advancedmodules">advancedmodules.php</filename>
+		<folder>advancedmodules</folder>
+	</files>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/system/nonumberelements/elements">
+		<param name="@loadlanguage" type="loadlanguage" extension="plg_system_advancedmodules" />
+		<param name="@license" type="license" extension="ADVANCED_MODULE_MANAGER" />
+		<param name="@version" type="version" extension="ADVANCED_MODULE_MANAGER" xml="/plugins/system/advancedmodules.xml" />
+		<param name="@dependency" type="dependency"
+			label="AM_THE_COMPONENT"
+			file="/administrator/components/com_advancedmodules/admin.advancedmodules.php" />
+		<param name="@header" type="header"
+			label="ADVANCED_MODULE_MANAGER"
+			description="ADVANCED_MODULE_MANAGER_DESC"
+			xml="/plugins/system/advancedmodules.xml"
+			image="/plugins/system/advancedmodules/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/advancedmodulemanager"
+			help_url="http://www.nonumber.nl/advancedmodulemanager" />
+	</params>
+</install>

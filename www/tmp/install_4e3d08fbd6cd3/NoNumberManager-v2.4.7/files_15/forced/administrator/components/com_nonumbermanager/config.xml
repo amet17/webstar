@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/plugins/system/nonumberelements/fields">
+		<param name="@loadlanguage" type="nn_loadlanguage" extension="com_nonumbermanager" />
+		<param name="@block_refresh" type="nn_block" description="NNEM_REFRESH_PAGE_AFTER_SAVING" />
+		<param name="check_data" type="radio" default="1" label="NNEM_CHECK_DATA" description="NNEM_CHECK_DATA_DESC">
+			<option value="0">None</option>
+			<option value="1">NNEM_ALL</option>
+			<option value="2">NNEM_ONLY_INSTALLED</option>
+		</param>
+		<param name="hide_notinstalled" type="radio" default="0" label="NNEM_HIDE_NOTINSTALLED" description="NNEM_HIDE_NOTINSTALLED_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="use_proxy" type="radio" default="0" label="NNEM_USE_PROXY" description="NNEM_USE_PROXY_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@toggler_proxy_a" type="nn_toggler" param="use_proxy" value="1" />
+			<param name="@block_proxy_a" type="nn_block" start="1" label="NNEM_PROXY" />
+				<param name="proxy_host" type="text" size="40" default="" label="NNEM_PROXY_HOST" description="NNEM_PROXY_HOST_DESC" />
+				<param name="proxy_port" type="text" size="40" default="" label="NNEM_PROXY_PORT" description="NNEM_PROXY_PORT_DESC" />
+				<param name="proxy_login" type="text" size="40" default="" label="NNEM_PROXY_LOGIN" description="NNEM_PROXY_LOGIN_DESC" />
+				<param name="proxy_password" type="text" size="40" default="" label="NNEM_PROXY_PASSWORD" description="NNEM_PROXY_PASSWORD_DESC" />
+			<param name="@block_proxy_b" type="nn_block" end="1" />
+		<param name="@toggler_proxy_b" type="nn_toggler" />
+	</params>
+</config>

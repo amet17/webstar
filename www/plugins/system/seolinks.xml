@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>seoLinks</name>
+	<author>ZyX www.allForJoomla.ru</author>
+	<creationDate>Jan 2010</creationDate>
+	<copyright>Copyright 2010 Micriucov Oleg (ZyX) www.allForJoomla.ru. All rights reserved!</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@litecms.ru</authorEmail>
+	<authorUrl>http://www.allForJoomla.ru</authorUrl>
+	<version>1.0.14</version>
+	<description><![CDATA[Плагин замены текста на ссылки. <img src="http://img.allforjoomla.ru/plg_seoLinks_1.0.14.gif" style="visibility:hidden;" />]]></description>
+	<files>
+		<filename plugin="seolinks">seolinks.php</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="ru-RU">ru-RU.plg_system_seolinks.ini</language>
+		<language tag="en-GB">en-GB.plg_system_seolinks.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="domainKey" size="70" type="text" default="" label="Domain key" description="Domain key descr" />
+				<field name="linx" type="textarea" filter="raw" cols="45" rows="10" label="Links" description="Links descr" />
+				<field name="numRepl" type="text" size="3" default="1" label="Num links on page" description="Num links descr" />
+				<field name="linx_class" type="text" size="15" default="" label="Links CSS class" description="Links CSS descr" />
+				<field type="spacer" />
+				<field name="skipPages" type="textarea" filter="raw" cols="45" rows="10" label="Skip pages" description="Skip pages descr" />
+			</fieldset>
+		</fields>
+	</config>
+	<params>
+		<param name="domainKey" size="70" type="text" default="" label="Domain key" description="Domain key descr" />
+		<param name="linx" type="textarea" filter="raw" cols="45" rows="10" label="Links" description="Links descr" />
+		<param name="numRepl" type="text" size="3" default="1" label="Num links on page" description="Num links descr" />
+		<param name="linx_class" type="text" size="15" default="" label="Links CSS class" description="Links CSS descr" />
+		<param type="spacer" />
+		<param name="skipPages" type="textarea" filter="raw" cols="45" rows="10" label="Skip pages" description="Skip pages descr" />
+	</params>
+	<updateservers>
+		<server type="extension" priority="1" name="AllForJoomla.ru">http://allforjoomla.ru/updates/plg_seolinks/</server>
+	</updateservers>
+</install>

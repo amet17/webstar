@@ -1,0 +1,15 @@
+INSERT INTO `#__sk_configs` (`id`, `config_key`, `config_value`) VALUES
+(1, 'special_user_ids', '62'),
+(2, 'akismet_api_key', '0d6b2421d0f6'),
+(3, 'notification_emails', ''),
+(4, 'send_email_to_user', '1'),
+(5, 'send_email_to_administrator', '1'),
+(6, 'admin_email_subject', 'New spam message detected on your forum'),
+(7, 'admin_email_body', '<p>Dear Administrator</p>\r\n<p>User <strong>[username]</strong> has posted a forum post which the system think that It is a spam message . You can login to back-end, check to publish or delete this message .</p>\r\n<p>Regards,</p>\r\n<p>Website administrator Team</p>'),
+(8, 'user_email_subject', 'Spam post detected'),
+(9, 'user_email_body', '<p>Dear <strong>[username]</strong></p>\r\n<p>It seems you just posted a spam message on our forum. Our administrator team will check your check your forum post and will publish if we find that it is not spam message .</p>\r\n<p>If you are not a spammer, you can also contact us via email : contact@domain.com .</p>\r\n<p>Regards,</p>\r\n<p>Website administrator team</p>'),
+(10, 'add_to_trusted_list', '1'),
+(11, 'add_to_block_list', '1'),
+(12, 'block_spammer', '0'),
+(13, 'option', 'com_spamkiller'),
+(14, 'task', 'save_config');

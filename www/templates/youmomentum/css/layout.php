@@ -1,0 +1,195 @@
+<?php header("Content-type: text/css"); ?>
+/*======================================================================*\
+|| #################################################################### ||
+|| # Copyright (C) Since 2006 Youjoomla LLC. All Rights Reserved.       ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- THIS IS NOT FREE SOFTWARE ---------------- #      ||
+|| # http://www.youjoomla.com | http://www.youjoomla.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+#centertop{text-align:left; margin:0 auto}
+
+#centerbottom{text-align:left; margin:0 auto; overflow:hidden}
+#header{text-align:left; height:88px; position:relative; z-index:10000}
+#logo{height:88px; float:left; text-align:left}
+
+#tags h1 a{text-indent:-7500px; display:block; height:88px; text-decoration:none}
+#tags{height:88px; float:left; overflow:hidden; margin:0; padding:0}
+
+#banner{height:60px; float:right; margin-top:27px; overflow:hidden; width:468px}
+
+.search{}
+.search .inputbox{}
+
+#pathway{margin-top:9px; padding:3px 5px}
+
+#topmodule{margin:0 auto; text-align:left; overflow:hidden; margin-bottom:10px}
+
+#wrap, #wrapblank{width:100%; margin:0 auto; text-align:left; height:100% !Important; height:1%}
+#insidewrap, #insidewrapblank{height:100% !Important; height:1%}
+
+#holder{height:100% !Important; height:1%; overflow:hidden; margin:0 auto; text-align:center; margin:0 0px}
+#leftblock{float:left; height:100% !Important; height:1%; overflow:hidden; text-align:left}
+#midblock{float:left; height:100% !Important; height:1%; overflow:hidden; text-align:left}
+#rightblock{float:left; height:100% !Important; height:1%; overflow:hidden; text-align:left}
+
+.inside{padding:5px; overflow:hidden}
+
+.insidem{padding:5px}
+#bottomout, 
+#topout{margin:0 auto; text-align:left; overflow:hidden; padding:0 15px 10px 15px; margin:0}
+.botmt, 
+.botmb{overflow:hidden; width:100%; height:10px; padding:0; margin:0; background:url(../images/botm_shade_top.png) no-repeat center bottom}
+.botmb{background:url(../images/botm_shade_b.png) no-repeat center bottom; margin:0 0 10px 0}
+.botmb .yjsquare{margin:0; padding:0}
+.botmb .yjsquare_in{margin:0; padding:0}
+.readb{float:right; display:block; text-indent:-999px; width:164px; height:55px}
+
+#bottommodule{margin:0 auto; text-align:left; overflow:hidden; padding:0 15px 10px 15px; margin:0}
+
+#footer{clear:both; text-align:center; overflow:hidden; margin:0 auto; padding:15px 0 50px 0}
+#youjoomla{clear:both; text-align:left; padding:5px 0px; overflow:hidden; margin:0 auto}
+#cp{text-align:left; padding:2px 0px; overflow:hidden}
+.validators{float:right; text-align:right}
+#footmod{clear:both; text-align:center; padding:5px; margin:0px; overflow:hidden}
+
+.news_item_f{margin:0 2px; position:relative}
+.news_item_c{margin:0 5px; position:relative}
+.news_item_s{margin:0 5px; position:relative}
+.news_item_a{margin:0px 0px 0 0px!Important; background:none; padding:2px 0px; overflow:hidden}
+
+.news_item_article{padding:0 0 0 0}
+
+.newsitem_tools{display:block; width:100%; margin:0 0 0 0 !Important; overflow:hidden}
+
+.newsitem_info{width:70%; display:block; height:10px; float:left}
+
+.buttonheading{width:30%; display:block; overflow:hidden; padding:0; float:right}
+.buttonheading img{border:0; height:12px; width:12px}
+.buttonheading .email, 
+.buttonheading .print, 
+.buttonheading .pdf{float:right; margin:0 4px 0 4px; width:16px}
+.createby{padding:0 3px 0 0px}
+.createdate{padding:0 3px 0 0px}
+.newsitem_section{padding:0 3px 0 0px}
+.newsitem_category{padding:0 3px 0 0px}
+.newsitem_section a{padding:0 3px 0 0px}
+.newsitem_category a{padding:0 3px 0 0px}
+.newsitems_link{}
+
+.newsitem_text{width:100%; display:block; padding:0 0 0 0 !Important}
+.modifydate{width:100%; display:block; padding:10px 0; overflow:hidden}
+.components{padding:20px 0}
+
+a.category:link, 
+a.category:visited, 
+a.category:focus{font-weight:bold; font-size:100%}
+.small{}
+
+ul.pagination{margin:15px auto 10px; padding:10px 0 0}
+ul.pagination li, 
+ul.pagination li:hover{background:none; display:inline; margin:3px; padding:0}
+ul.pagination li span{padding:2px 5px}
+ul.pagination a{padding:2px 3px; text-decoration:none}
+ul.pagination a:hover, ul.pagination a:active, ul.pagination a:focus{}
+.pagenavbar{font-weight:bold; padding-left:14px}
+.pagenavcounter{font-weight:bold; padding:8px 14px 0 14px}
+
+.yjsquare h3, 
+.yjsquare_yj1 h3, 
+.yjsquare_yj2 h3{overflow:hidden; font-size:18px; padding:0; margin:5px 5px 0px 5px; font-family:"Trebuchet MS",sans-serif}
+.yjsquare h3 span, 
+.yjsquare_yj1 h3 spa, 
+.yjsquare_yj2 h3 spann{overflow:hidden}
+.yjsquare p, 
+.yjsquare_yj1 p, 
+.yjsquare_yj2 p{overflow:hidden; padding:3px}
+.yjsquare_in, 
+.yjsquare_yj1 .yjsquare_in, 
+.yjsquare_yj2 .yjsquare_in{overflow:hidden; padding:10px 3px}
+.yjsquare, 
+.yjsquare_yj1, 
+.yjsquare_yj2{margin:5px 0 5px 0px; padding:0px; clear:both; display:block; height:100% !Important; height:1%; overflow:hidden}
+
+.pollbuttons{margin:0 auto; width:80%; text-align:center; height:30px}
+
+#modlgn_passwd, #modlgn_username{width:95%; height:19px; padding-left:3px; padding-top:3px}
+
+/* K2 */
+#k2Container{margin:0px 0 0 0; padding:0}
+#k2Container .itemToolbar ul li, 
+#k2Container .itemSocialLinksBlock ul li, 
+#k2Container .catItemTagsBlock ul li, 
+#k2Container ul.userItemTags li, 
+#k2Container ul.itemTags li{list-style-type:none; background-image:none}
+
+.itemImageBlock, 
+.itemImageBlock .itemImage, 
+.itemImageBlock .itemImage img{float:left}
+
+.itemFullText{margin:5px 0 0 0}
+.itemListCategoriesBlock{}
+
+div.itemListCategory{font-weight:bold; margin:0}
+div.itemListCategory h2{font-size:20px; font-family:"Trebuchet MS",sans-serif}
+div.itemListCategory h2{font-family:"Trebuchet MS",sans-serif}
+div.catItemHeader h3.catItemTitle{font-family:"Trebuchet MS",serif; font-size:18px}
+ 
+div.subCategoryContainer{float:left; clear:right}
+div.subCategoryContainer h2{font-size:18px}
+ 
+span.userItemImage img, 
+span.itemImage img, 
+span.catItemImage img, 
+span.genericItemImage img{padding:5px}
+div.catItemImageBlock{margin:0; padding:0}
+span.catItemImage{margin:0; padding:0; float:left}
+div.itemCommentsForm form input.button{font:bold 12px "Trebuchet MS",serif}
+
+div.itemHeader{position:relative}
+div.itemHeader span.itemDateCreated{position:absolute; top:34px; left:160px}
+div.itemHeader h2.itemTitle{padding:0 0 5px 0; font:bold 24px "Trebuchet MS",serif}
+div.itemExtraFields{border:0}
+div.catItemIntroText{padding:4px 0 0px 0}
+div.catItemLinks{margin:0 0 2px 0px}
+div.itemExtraFields ul li span.itemExtraFieldsValue{display:block; margin-left:31%}
+
+div.itemComments ul.itemCommentsList li span.commentDate, 
+div.itemComments ul.itemCommentsList li span.commentAuthorName{font-size:12px; font-weight:normal}
+div.userItemHeader h3.userItemTitle{font:normal 24px "Trebuchet MS",serif}
+
+div.k2LatestCommentsBlock ul{margin:0; padding:0}
+.k2LatestCommentsBlock ul li.even, 
+.k2LatestCommentsBlock ul li.odd{margin:0 0px 2px 0px; padding:8px 4px}
+.k2LatestCommentsBlock ul li{list-style-type:none; background-image:none; background:none}
+
+.k2ItemsBlock .clr, 
+.k2ItemsBlock .clearList{display:none}
+.k2ItemsBlock ul li{margin:0 -10px 5px -10px; padding:8px 4px}
+div.k2ItemsBlock ul li a.moduleItemTitle{clear:right; display:block; font:bold 16px "Trebuchet MS",serif}
+div.k2ItemsBlock ul li{position:relative}
+div.k2ItemsBlock ul li img.moduleItemAuthorAvatar{display:block; position:absolute; right:0; float:right; padding:2px; margin:20px 4px 0 0; width:14px; height:auto}
+
+#bottomshelf_inwr .k2ItemsBlock ul li{margin:0 -10px 5px -10px; padding:0px 4px; background:none; border:none}
+#bottomshelf_inwr .k2ItemsBlock .moduleItemTitle{font-size:12px; font-weight:bold; clear:right; display:block; margin:-2px 0 0 0; padding:0}
+
+#yjsg0, #yjsg1, #yjsg2{margin:0 auto; text-align:center; overflow:hidden; height:auto}
+#yjsg0{padding:0; margin:0 auto; height:375px}
+#YJT_container{margin:-10px}
+#yjsg0_shadot{margin:16px auto 0 auto; text-align:center; height:10px; display:block; overflow:hidden; clear:both; background:url(../images/shadow_top.png) no-repeat center top}
+#yjsg0_shadob{margin:0 auto 55px auto; text-align:center; height:23px; display:block; overflow:hidden; clear:both; background:url(../images/shadow_bottom.png) no-repeat center top}
+#yjsg0 .yjsquare_in{margin:0; padding:10px}
+#yjsg0 .yjsquare h3{margin:20px 0 5px 10px}
+#yjsg1 .readon{float:right; margin:0}
+#yjsg2_in{margin:0 auto; padding:10px 0 0 0}
+.yjsgxhtml{float:left; clear:right; text-align:left; margin:0; padding:0}
+.yjsgxhtml .yjsquare{margin:0; padding:0; border:0}
+#yjsg2 .yjsgxhtml .yjsquare{margin:0; padding:0 10px 0 15px; border:0}
+
+#yjsg2 #user10{background:none}
+
+#yjsg2 .yjsquare h3{margin:5px 0 0 0}
+#yjsg2 ul li{display:block; float:left; width:45%; overflow:hidden; padding:0px 0px 0px 10px}
+#yjsg2 ul li a{display:block; padding:0; margin:0; height:26px; line-height:26px; overflow:hidden}
+.yjnewsflash_title{display:block; clear:both; margin:0 !Important; padding:10px 0 5px 0}
+

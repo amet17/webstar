@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="k2" method="upgrade">
+  <name>K2 Plugin - Google Maps</name>
+  <author>Simon Wells</author>
+  <creationDate>1st April 2010</creationDate>
+  <copyright>Copyright (c) 2010 Simon Wells. All rights reserved.</copyright>
+  <authorEmail>support@simon.getk2.org</authorEmail>
+  <authorUrl>http://simon.getk2.org</authorUrl>
+  <version>1.1.1</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>A K2 plugin to display Google Maps in K2 Items.</description>
+	<files>
+		<filename plugin="maps">maps.php</filename>
+	</files>
+	<params>
+	</params>
+	<params group="item-content">
+		<param name="longitude" type="text" size="80" default="" label="Longitude" description="The Geographical Longitude of the location, example: 50.807177" />
+		<param name="latitude" type="text" size="80" default="" label="Latitude" description="The Geographical Latitude of the location, example: -0.36887" />
+		<param name="color" type="list" default="red" label="Marker Color" description="Color of the marker, which will indicate the location." >
+			<option value="red">Red</option>
+			<option value="green">Green</option>
+			<option value="blue">Blue</option>
+			<option value="yellow">Yellow</option>
+			<option value="black">Black</option>
+		</param>
+		<param name="marker" type="text" size="80" default="" label="Title of the position" description="Use some title to indicate the desired location" />		
+		<param name="zoom" type="list" default="12" label="Zoom" description="Zoom level of the map. Note: Higher = More Zoom, Lower = More map detail. On certain places high levels of zoom might not be available, this is a limitaion of Google maps." >
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+		</param>
+		<param name="width" type="text" size="80" default="" label="Width of the map" description="Enter a numeric value only (in px, but do not enter px text), for the width of the map" />		
+		<param name="height" type="text" size="80" default="" label="Height of the map" description="Enter a numeric value only (in px, but do not enter px text), for the height of the map" />		
+		<param name="type" type="list" default="roadmap" label="Map Type" description="Please select a map type!" >
+			<option value="roadmap">Roadmap</option>
+			<option value="satellite">Satellite </option>
+			<option value="terrain">Terrain</option>
+			<option value="hybrid">Hybrid</option>
+		</param>
+		</params>
+</install>

@@ -1,0 +1,12 @@
+Date	Time	Cause	IP	Name	User agent	Request method	Request URI	Comment
+2011-07-02	12:57:01	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0	POST	/forum/tema1/index.php?option=com_kunena	http://sborka.ru/forum/tema1/1-kosvennyiy-predel-posledovatelnosti.html
+2011-07-02	13:03:59	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0	POST	/forum/tema1/index.php?option=com_kunena	http://sborka.ru/forum/tema1/1-kosvennyiy-predel-posledovatelnosti.html
+2011-07-13	11:20:24	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/kompanii.html	http://sborka.ru/kompanii.html
+2011-07-13	11:20:32	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/advertise-on-this-site.html	http://sborka.ru/kompanii.html
+2011-07-13	11:20:37	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/forum/	http://sborka.ru/advertise-on-this-site.html
+2011-07-13	11:21:03	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/kompanii.html	http://sborka.ru/forum/
+2011-07-13	11:21:22	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/kompanii.html	http://sborka.ru/kompanii.html
+2011-07-13	11:21:33	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/stati.html	http://sborka.ru/kompanii.html
+2011-07-13	11:21:37	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/kompanii.html	http://sborka.ru/stati.html
+2011-07-13	11:24:37	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/kompanii.html	http://sborka.ru/kompanii.html
+2011-07-13	11:24:40	Page not found (404)	127.0.0.1	activate.adobe.com	Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0	GET	/kompanii.html	http://sborka.ru/kompanii.html
